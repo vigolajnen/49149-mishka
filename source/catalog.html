@@ -34,7 +34,42 @@
       </nav>
     </header>
     <main class="main">
-
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог товаров</h1>
+        <div class="catalog__wrapper">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
+              <a class="product__link" href="#">
+                <img class="product__pic" src="http://placehold.it/260x200" alt="">
+              </a>
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
+              <p class="product__info">Рост 30 см, вес 200 г</p>
+              <p class="product__price">1 200 руб.</p>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__link" href="#">
+                <img class="product__pic" src="http://placehold.it/260x200" alt="">
+              </a>
+              <h3 class="product__title">Корзинка для белья</h3>
+              <p class="product__info">Диаметр 15 см, высота 10 см</p>
+              <p class="product__price">690 руб.</p>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__link" href="#">
+                <img class="product__pic" src="http://placehold.it/260x200" alt="">
+              </a>
+              <h3 class="product__title">Большая корзинка для игрушек</h3>
+              <p class="product__info">Диаметр 30 см, высота 30 см</p>
+              <p class="product__price">1 500 руб.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video">
+        <h2 class="video__title">Процесс производства</h2>
+        <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="video__button button" type="button">Сделать заказ</button>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__item social">
@@ -61,5 +96,17 @@
         <img class="copyright__pic" src="http://placehold.it/50x50">
       </div>
     </footer>
+    <section id="modal" class="size-choice">
+      <div class="size-choice__wrapper">
+        <h2 class="size-choice__title">Добавить в корзину</h2>
+        <p class="size-choice__caption">Выберите размер:</p>
+        <ul class="size-choice__list">
+          <li class="size-choice__item">S</li>
+          <li class="size-choice__item">M</li>
+          <li class="size-choice__item">L</li>
+        </ul>
+        <button class="size-choice__button button" type="button" aria-label="Добавить" tabindex="1"></button>
+      </div>
+    </section>
   </body>
 </html>
