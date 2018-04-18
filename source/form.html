@@ -8,31 +8,29 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__item">
+      <div class="page-header__inner">
         <a class="page-header__logo logo" href="#">
           <img class="logo__pic" src="http://placehold.it/90x40" alt="логотип">
         </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
       </div>
-      <nav class="page-header__item navigation">
-        <button class="navigation__toggle" type="button">Открыть меню</button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#"><span class="navigation__icon">
-                <img src="http://placehold.it/30x30" alt="иконка поиска"></span>Поиск по сайту</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#"><span class="navigation__icon">
-                <img src="http://placehold.it/30x30" alt="иконка корзины"></span>Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#"><span class="navigation__icon">
+              <img src="http://placehold.it/30x30" alt="иконка поиска"></span>Поиск по сайту</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#"><span class="navigation__icon">
+              <img src="http://placehold.it/30x30" alt="иконка корзины"></span>Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main">
@@ -45,12 +43,12 @@
                 <legend class="type__title">Тип:</legend>
                 <ul class="type__list">
                   <li class="type__item">
-                    <input class="type__input visually-hidden" id="type-0" type="radio" name="type" value="Аксессуар для интерьера" checked>
-                    <label for="type-0">Аксессуар для интерьера</label>
+                    <input class="type__input visually-hidden" id="type-1" type="radio" name="type" value="Аксессуар для интерьера" checked>
+                    <label for="type-2">Аксессуар для интерьера</label>
                   </li>
                   <li class="type__item">
-                    <input class="type__input visually-hidden" id="type-1" type="radio" name="type" value="Детская игрушка">
-                    <label for="type-1">Детская игрушка</label>
+                    <input class="type__input visually-hidden" id="type-2" type="radio" name="type" value="Детская игрушка">
+                    <label for="type-2">Детская игрушка</label>
                   </li>
                 </ul>
               </fieldset>
