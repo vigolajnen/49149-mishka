@@ -1,0 +1,40 @@
+.reviews__wrapper {
+  padding: 0 30px;
+}
+.reviews__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+}
+.reviews__item {
+  display: none;
+  margin: 0 0 35px 0;
+}
+.reviews__item--active {
+  display: block;
+}
+
+.reviews__text {
+  margin: 35px 0 70px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  font-style: normal;
+}
+
+.reviews__author-nickname {
+  display: block;
+  margin-top: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444;
+}
