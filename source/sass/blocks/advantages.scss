@@ -5,13 +5,14 @@
   padding: 30px 30px 0;
   margin-bottom: 30px;
 }
+
 .advantages__title {
   margin: 0;
   padding: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
-  color: #000;
+  color: $title-color;
 }
 
 .advantages__list {
@@ -19,6 +20,7 @@
   margin: 0;
   list-style: none;
 }
+
 .advantages__item {
   position: relative;
   padding-top: 60px;
@@ -26,7 +28,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: #000;
+  color: $title-color;
 
   &--flower::before {
     content: "";

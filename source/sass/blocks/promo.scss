@@ -16,7 +16,7 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
-  color: #010000;
+  color: $title-color;
   text-align: center;
 }
 
@@ -32,12 +32,12 @@
   padding: 30px;
   font-size: 19px;
   line-height: 24px;
-  color: #fff;
-  background: #63d1bb;
+  color: $promo-link-color;
+  background: $promo-link-bg;
   text-decoration: none;
 
   &:last-child {
-    background-color: #56c3b2;
+    background-color: $promo-link-bg-dark;
   }
 
   &--interior::before {
