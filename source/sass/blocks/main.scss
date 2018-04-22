@@ -8,3 +8,12 @@
   color: $title-color;
   background: $title-bg;
 }
+
+.main__caption {
+  margin: 0 30px;
+  padding: 30px 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $text-color;
+}

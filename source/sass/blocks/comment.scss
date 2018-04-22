@@ -1,0 +1,45 @@
+.comment {
+  padding: 0;
+  margin: 0 0 20px;
+  border: 0;
+}
+
+.comment__wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $title-color;
+}
+
+.comment__title {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $type-title-color;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 80px;
+    top: 8px;
+    width: 180px;
+    height: 1px;
+    background: $type-title-color;
+  }
+}
+
+.form-order__comment {
+  min-height: 140px;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
+  resize: none;
+  opacity: 0.3;
+  border: none;
+}
+

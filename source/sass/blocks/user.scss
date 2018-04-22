@@ -1,0 +1,65 @@
+.user {
+  padding: 0;
+  margin: 0 0 40px;
+  border: 0;
+}
+
+.user__title {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $type-title-color;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 8px;
+    width: 180px;
+    height: 1px;
+    background: $type-title-color;
+  }
+}
+
+.user__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.user__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border-bottom: 2px solid $title-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.user__label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $title-color;
+}
+
+.user__input {
+  padding-bottom: 15px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
+  opacity: 0.3;
+  border: none;
+}
+
