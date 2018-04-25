@@ -1,0 +1,34 @@
+.navigation {
+  display: none;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation__item {
+  width: 100%;
+  border-top: 1px solid #ececec;
+}
+
+.navigation__link {
+  position: relative;
+  display: block;
+  padding: 30px 30px 30px 76px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $nav-link-color;
+  text-decoration: none;
+}
+
+.navigation__icon {
+  position: absolute;
+  left: 30px;
+}

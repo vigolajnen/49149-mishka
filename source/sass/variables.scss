@@ -1,0 +1,43 @@
+
+// Внутренние переменные
+$x-color-black:           #000000;
+$x-color-white:           #ffffff;
+$x-color-gray:            #f1f1f1;
+$x-color-dark-gray:       #444444;
+$x-color-light-gray:      #ececec;
+$x-color-turquoise:       #63d1bb;
+$x-color-dark-turquoise:  #56c3b2;
+
+// Глобальные переменные
+$text-color:               $x-color-dark-gray;
+$title-color:                  $x-color-black;
+$title-bg:                      $x-color-gray;
+$border-color:             $x-color-dark-gray;
+$link-color:               $x-color-dark-gray;
+$link-border:              $x-color-turquoise;
+$address-color:            $x-color-dark-gray;
+$copyright-color:              $x-color-black;
+$copyright-pic:            $x-color-turquoise;
+$nav-link-color:               $x-color-black;
+$footer-bg:                     $x-color-gray;
+$header-border-color:     $x-color-light-gray;
+$promo-link-color:             $x-color-white;
+$promo-link-bg:            $x-color-turquoise;
+$promo-link-bg-dark:  $x-color-dark-turquoise;
+$reviews-name-color:       $x-color-dark-gray;
+$reviews-border-color:    $x-color-light-gray;
+$size-choice-bg:               $x-color-white;
+$size-choice-border-color:            #c7c7c7;
+$size-choice-item-border: $x-color-light-gray;
+$size-choice-item-active:  $x-color-turquoise;
+$size-choice-btn-color:        $x-color-white;
+$size-choice-btn-bg:       $x-color-turquoise;
+$week-product-mark:        $x-color-turquoise;
+$week-product-text:            $x-color-black;
+$week-product-border:     $x-color-light-gray;
+$border-social:                       #e5e5e5;
+$product-price-color:          $x-color-black;
+$product-border-color:                #ededed;
+$video-border-color:                  #ededed;
+$type-title-color:         $x-color-turquoise;
+$type-input-checked:       $x-color-turquoise;

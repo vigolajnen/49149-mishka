@@ -1,0 +1,72 @@
+.colors {
+  padding: 0;
+  margin: 0 0 40px;
+  border: 0;
+}
+
+.colors__title {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $type-title-color;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 8px;
+    width: 180px;
+    height: 1px;
+    background: $type-title-color;
+  }
+}
+
+.colors__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.colors__item {
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.colors__input:checked + .colors__label::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.colors__label {
+  position: relative;
+  display: block;
+  padding-left: 65px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $title-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $title-color;
+  }
+}

@@ -1,0 +1,56 @@
+.telephone {
+  padding: 0;
+  margin: 0 0 40px;
+  border: 0;
+}
+
+.telephone__wrapper {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid $title-color;
+}
+
+.telephone__title {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $type-title-color;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 8px;
+    width: 180px;
+    height: 1px;
+    background: $type-title-color;
+  }
+}
+
+.telephone__input {
+  position: relative;
+  padding-bottom: 15px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
+  opacity: 0.3;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

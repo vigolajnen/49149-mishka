@@ -1,0 +1,58 @@
+.reviews__wrapper {
+  padding: 0 30px 40px;
+}
+
+.reviews__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $title-color;
+}
+
+.reviews__item {
+  display: none;
+  margin: 0 0 35px 0;
+}
+
+.reviews__item--active {
+  display: block;
+}
+
+.reviews__text {
+  margin: 35px 0 70px;
+  font-size: 15px;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $title-color;
+  font-style: normal;
+}
+
+.reviews__author-nickname {
+  display: block;
+  margin-top: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $reviews-name-color;
+}
+
+.reviews__inner {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.reviews__prev {
+  padding: 10px 40px;
+  border: 1px solid $reviews-border-color;
+}
+
+.reviews__next {
+  padding: 10px 40px;
+  border: 1px solid $reviews-border-color;
+}

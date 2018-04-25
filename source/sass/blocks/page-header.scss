@@ -1,0 +1,30 @@
+.page-header__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $header-border-color;
+  border-bottom: 1px solid $header-border-color;
+}
+
+.page-header__toggle {
+  position: absolute;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &--open {
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--close {
+    background-image: url("../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

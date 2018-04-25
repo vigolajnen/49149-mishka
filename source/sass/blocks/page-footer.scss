@@ -1,0 +1,10 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $footer-bg;
+  padding: 30px 30px 20px 30px;
+}
+
+.page-footer__item {
+  margin-bottom: 30px;
+}
