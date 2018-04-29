@@ -129,7 +129,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .navigation__wrapper {
     width: $tablet-width;
     padding: 0 50px;
@@ -150,6 +149,7 @@
   .navigation__link--search {
     font-size: 0;
     width: 86px;
+    text-align: center;
   }
 
   .navigation__item {
@@ -184,7 +184,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .navigation__wrapper {
     width: 1150px;
     padding: 0 50px;
