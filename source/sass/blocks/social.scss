@@ -22,3 +22,14 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+    padding: 0;
+  }
+
+  .social__list {
+    margin: 0;
+  }
+}

@@ -1,10 +1,46 @@
 .page-footer {
+  background-color: $footer-bg;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: $footer-bg;
   padding: 30px 30px 20px 30px;
 }
 
 .page-footer__item {
   margin-bottom: 30px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: $tablet-width;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .page-footer__item {
+    margin-bottom: 0;
+    padding: 25px 0;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
 }
