@@ -37,11 +37,16 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  border-bottom: 2px solid $title-color;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.user__border {
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid $title-color;
 }
 
 .user__label {
@@ -61,4 +66,51 @@
   color: $text-color;
   opacity: 0.3;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user {
+    width: $tablet-width;
+    padding: 55px 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .user__title {
+    position: absolute;
+
+    &::before {
+      width: 0;
+    }
+  }
+
+  .user__list {
+    padding-left: 165px;
+  }
+
+  .user__item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .user__border {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user {
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .user__list {
+    padding-left: 175px;
+    width: 700px;
+  }
+
+  .user__phone-email {
+    padding: 0 50px;
+  }
 }

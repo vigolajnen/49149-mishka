@@ -72,3 +72,35 @@
   background: $type-input-checked;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet-width) {
+  .type {
+    width: $tablet-width;
+    padding: 55px 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .type__title {
+    position: absolute;
+
+    &::before {
+      width: 0;
+    }
+  }
+
+  .type__list {
+    padding-left: 165px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type {
+    width: 1150px;
+    box-sizing: border-box;
+  }
+
+  .type__list {
+    padding-left: 175px;
+  }
+}

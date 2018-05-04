@@ -26,6 +26,8 @@
 }
 
 .colors__list {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -68,5 +70,56 @@
     width: 38px;
     height: 38px;
     border: 2px solid $title-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .colors {
+    background: $form-bg;
+  }
+
+  .colors__wrapper {
+    width: $tablet-width;
+    padding: 55px 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .colors__title {
+    position: absolute;
+
+    &::before {
+      width: 0;
+    }
+  }
+
+  .colors__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 165px;
+  }
+
+  .colors__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .colors {
+    background: $form-bg;
+  }
+
+  .colors__wrapper {
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .colors__item {
+    width: 30%;
+  }
+
+  .colors__list {
+    padding-left: 175px;
   }
 }

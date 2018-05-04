@@ -1,5 +1,6 @@
 .catalog {
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .catalog__list {
@@ -8,4 +9,41 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: $tablet-width;
+    padding: 0 50px;
+    margin: 80px auto 55px;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .catalog__item {
+    width: 100%;
+    min-height: 335px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1150px;
+    padding: 0 50px;
+    margin: 130px auto 55px;
+  }
+
+  .catalog__list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 313px;
+  }
 }

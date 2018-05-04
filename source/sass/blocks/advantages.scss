@@ -16,6 +16,9 @@
 }
 
 .advantages__list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   padding: 30px 0 0 0;
   margin: 0;
   list-style: none;
@@ -94,5 +97,51 @@
     background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: $tablet-width;
+    padding: 0 50px;
+    margin: 60px auto 0;
+    box-sizing: border-box;
+  }
+
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 334px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 22px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 700px;
+    padding: 0 50px;
+    margin: 70px auto 0;
+  }
+
+  .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 700;
+  }
+
+  .advantages__item {
+    width: 50%;
   }
 }
