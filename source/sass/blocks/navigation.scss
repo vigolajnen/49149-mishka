@@ -55,6 +55,10 @@
 
 .navigation__item:nth-child(1) {
   order: 1;
+
+  .navigation__link {
+    padding: 22px;
+  }
 }
 
 .navigation__item:nth-child(2) {
@@ -110,12 +114,20 @@
 
 .navigation__link {
   display: block;
-  padding: 30px 0 30px 0;
+  padding: 30px 30px 30px 75px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $nav-link-color;
   text-decoration: none;
+}
+
+.navigation__link--search {
+  padding-left: 30px;
+}
+
+.navigation__link--cart {
+  padding-left: 30px;
 }
 
 .navigation__icon {
@@ -147,9 +159,14 @@
     display: none;
   }
 
+  .navigation__link {
+    padding: 30px 0;
+  }
+
   .navigation__link--search {
-    font-size: 0;
     width: 86px;
+    padding-left: 0;
+    font-size: 0;
     text-align: center;
   }
 
