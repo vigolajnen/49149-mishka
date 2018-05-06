@@ -75,15 +75,15 @@
 
   .form-order__subtext {
     order: 2;
-    padding: 0 50px;
     width: 50%;
+    padding: 0 50px;
   }
 
   .form-order__button {
     order: 1;
+    width: 50%;
     padding: 20px 30px;
     margin: 0 50px;
-    width: 50%;
   }
 }
 
@@ -107,9 +107,9 @@
 
   .form-order__subtext {
     order: 2;
+    width: 50%;
     padding: 0;
     text-align: right;
-    width: 50%;
   }
 
   .form-order__button {
