@@ -1,6 +1,6 @@
 .comment {
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   border: 0;
 }
 
@@ -13,7 +13,7 @@
 .comment__title {
   position: relative;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -32,7 +32,7 @@
 }
 
 .comment__textarea {
-  min-height: 140px;
+  min-height: 108px;
   padding: 15px;
   font-size: 17px;
   line-height: 18px;
@@ -41,6 +41,10 @@
   resize: none;
   opacity: 0.3;
   border: none;
+}
+
+.form-order__button {
+  padding: 14px 40px;
 }
 
 @media (min-width: $tablet-width) {
