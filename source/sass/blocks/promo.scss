@@ -2,10 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 285px;
   padding: 0 30px;
+  margin: 0 auto;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -15,16 +15,21 @@
 .promo__title {
   width: 100%;
   margin: 0;
+  margin-top: 70px;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   color: $title-color;
   text-align: center;
+
+  span {
+    display: block;
+  }
 }
 
 .promo__inner {
   position: absolute;
-  bottom: -160px;
+  bottom: -203px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -34,9 +39,10 @@
 .promo__link {
   position: relative;
   display: block;
-  padding: 30px;
-  font-size: 19px;
+  padding: 25px 30px 30px 30px;
+  font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
   color: $promo-link-color;
   background: $promo-link-bg;
   text-decoration: none;
@@ -48,8 +54,8 @@
   &--interior::before {
     content: "";
     position: absolute;
-    top: 12px;
-    right: 30px;
+    top: 23px;
+    right: 35px;
     width: 41px;
     height: 63px;
     background-image: url("../img/icon-interior.svg");
@@ -61,8 +67,8 @@
   &--toy::before {
     content: "";
     position: absolute;
-    top: 15px;
-    right: 25px;
+    top: 20px;
+    right: 28px;
     width: 60px;
     height: 60px;
     background-image: url("../img/icon-toy.svg");
@@ -84,13 +90,13 @@
     width: $tablet-width;
     min-height: 730px;
     padding: 0 50px;
-    margin: -85px auto 0;
+    margin: -90px auto 0;
     z-index: -1;
     box-sizing: border-box;
   }
 
   .promo__inner {
-    bottom: 0;
+    bottom: -10px;
     left: 50px;
     flex-direction: row;
     width: 668px;
@@ -99,15 +105,32 @@
 
   .promo__title {
     max-width: 500px;
-    margin-top: 165px;
+    margin-top: 150px;
     font-size: 43px;
     line-height: 50px;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
   .promo__link {
     flex-grow: 1;
-    font-size: 20px;
+    width: 50%;
+    padding: 27px 34px;
+    font-size: 18px;
     line-height: 30px;
+
+    &--interior::before {
+      top: 26px;
+      right: 35px;
+    }
+
+    &--toy::before {
+      top: 30px;
+      right: 32px;
+    }
   }
 }
 
@@ -115,7 +138,6 @@
   .promo {
     width: 1150px;
     padding: 0 50px;
-    margin: -85px auto 0;
     z-index: -1;
     box-sizing: border-box;
   }
@@ -134,5 +156,9 @@
 
   .promo__link {
     flex-grow: 1;
+  }
+
+  .promo__name {
+    max-width: 195px;
   }
 }
