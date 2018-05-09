@@ -48,11 +48,13 @@
 
 @media (min-width: $tablet-width) {
   .email {
+    position: relative;
     margin-bottom: 0;
   }
 
   .email__title {
     position: absolute;
+    top: 8px;
 
     &::before {
       width: 0;
@@ -62,15 +64,28 @@
   .email__wrapper {
     margin-left: 165px;
   }
+
+  .email__input {
+    padding-left: 20px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .email {
-    padding: 55px 0;
+    padding: 0;
   }
 
   .email__wrapper {
     width: 700px;
     margin-left: 175px;
+  }
+
+  .email__title {
+    position: absolute;
+    top: 8px;
+    left: 61px;
   }
 }

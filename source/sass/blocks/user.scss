@@ -71,7 +71,7 @@
 @media (min-width: $tablet-width) {
   .user {
     width: $tablet-width;
-    padding: 55px 50px;
+    padding: 66px 50px 50px;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -85,16 +85,32 @@
   }
 
   .user__list {
-    padding-left: 165px;
+    padding-left: 167px;
   }
 
   .user__item {
     flex-direction: row;
     align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .user__label {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 700;
   }
 
   .user__border {
-    margin-left: 20px;
+    margin-left: 27px;
+    margin-top: -6px;
+  }
+
+  .user__input {
+    padding-bottom: 13px;
+    padding-left: 14px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
   }
 }
 
@@ -112,5 +128,10 @@
 
   .user__phone-email {
     padding: 0 50px;
+  }
+
+  .user__title {
+    position: absolute;
+    left: 160px;
   }
 }

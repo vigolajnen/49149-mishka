@@ -43,20 +43,18 @@
   border: none;
 }
 
-.form-order__button {
-  padding: 14px 40px;
-}
-
 @media (min-width: $tablet-width) {
   .comment {
+    position: relative;
     width: $tablet-width;
-    padding: 55px 50px;
+    padding: 50px;
     margin: 0 auto;
     box-sizing: border-box;
   }
 
   .comment__title {
     position: absolute;
+    top: 69px;
 
     &::before {
       width: 0;
@@ -66,17 +64,29 @@
   .comment__wrapper {
     margin-left: 165px;
   }
+
+  .comment__textarea {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
     width: 1150px;
     margin: 0 auto;
+    padding-bottom: 40px;
     box-sizing: border-box;
   }
 
   .comment__wrapper {
     width: 700px;
     margin-left: 175px;
+  }
+
+  .comment__title {
+    position: absolute;
+    top: 67px;
+    left: 113px;
   }
 }

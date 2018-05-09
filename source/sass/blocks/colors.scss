@@ -76,6 +76,7 @@
 
 @media (min-width: $tablet-width) {
   .colors {
+    margin-bottom: 14px;
     background: $form-bg;
   }
 
@@ -106,6 +107,14 @@
   .colors__item {
     width: 50%;
     margin-bottom: 58px;
+
+    &:nth-child(2n+2) .colors__label {
+      padding-left: 92px;
+    }
+
+    &:nth-child(2n+2) .colors__label::before {
+      left: 11px;
+    }
 
     &:nth-child(5) {
       margin-bottom: 0;
@@ -138,20 +147,36 @@
 
 @media (min-width: $desktop-width) {
   .colors {
+    margin-bottom: 0;
     background: $form-bg;
   }
 
   .colors__wrapper {
     width: 1150px;
     margin: 0 auto;
+    padding: 55px 50px 10px;
     box-sizing: border-box;
   }
 
   .colors__item {
     width: 30%;
+
+    &:nth-child(2n+2) .colors__label::before {
+      left: 0;
+    }
+
+    &:nth-child(2n+2) .colors__label {
+      padding-left: 81px;
+    }
   }
 
   .colors__list {
     padding-left: 175px;
+  }
+
+  .colors__title {
+    position: absolute;
+    top: 65px;
+    left: 110px;
   }
 }
