@@ -1,6 +1,6 @@
 .telephone {
   padding: 0;
-  margin: 0 0 40px;
+  margin: 0 0 31px;
   border: 0;
 }
 
@@ -13,7 +13,7 @@
 .telephone__title {
   position: relative;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -33,7 +33,7 @@
 
 .telephone__input {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -47,8 +47,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .telephone {
+    position: relative;
+    margin-bottom: 33px;
+  }
+
   .telephone__title {
     position: absolute;
+    top: 13px;
 
     &::before {
       width: 0;
@@ -57,12 +63,27 @@
 
   .telephone__wrapper {
     margin-left: 165px;
+    margin-top: 7px;
+  }
+
+  .telephone__input {
+    padding-left: 20px;
+    padding-bottom: 11px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
   }
 }
 
 @media (min-width: $desktop-width) {
   .telephone__wrapper {
-    margin-left: 175px;
     width: 700px;
+    margin-left: 175px;
+  }
+
+  .telephone__title {
+    position: absolute;
+    top: 13px;
+    left: 61px;
   }
 }

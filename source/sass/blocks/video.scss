@@ -6,15 +6,15 @@
 .video__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 30px 30px;
+  margin: 0 30px 56px;
   border: 1px solid $video-border-color;
 }
 
 .video__title {
   order: 1;
   position: relative;
-  margin: 30px;
-  padding-left: 50px;
+  margin: 25px 30px;
+  padding-left: 58px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -23,8 +23,8 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 3px;
+    top: 6px;
     width: 50px;
     height: 50px;
     background-image: url("../img/icon-video.svg");
@@ -35,13 +35,14 @@
 .video__pic {
   order: 2;
   min-height: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .video__text {
   order: 3;
-  padding: 0 30px;
+  padding: 0 33px;
   margin: 0;
+  margin-bottom: 26px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -50,8 +51,9 @@
 
 .video__button {
   order: 4;
-  padding: 20px 25px;
-  margin: 30px;
+  padding: 14px 25px;
+  margin: 0 33px 33px;
+  font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,9 +70,14 @@
 
   .video__title {
     order: 2;
-    margin: 30px 45px 30px 40px;
+    margin: 10px 45px 32px 47px;
     font-size: 20px;
     line-height: 24px;
+
+    &::before {
+      left: -5px;
+      top: -4px;
+    }
   }
 
   .video__pic {
@@ -79,13 +86,15 @@
   }
 
   .video__text {
+    margin-bottom: 6px;
     padding: 0 45px 0 40px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .video__button {
-    margin: 30px 45px 50px 40px;
+    padding: 16px 25px;
+    margin: 30px 40px 45px 40px;
     font-size: 17px;
     line-height: 16px;
   }
@@ -108,11 +117,17 @@
 
   .video__title {
     padding: 50px 50px 0 0;
-    margin-left: 85px;
+    margin-left: 80px;
+    margin-top: 46px;
+
+    &::before {
+      left: 3px;
+    }
   }
 
   .video__text {
-    padding-left: 85px;
+    padding-left: 80px;
+    margin-bottom: 47px;
   }
 
   .video__pic {
@@ -125,6 +140,7 @@
   }
 
   .video__button {
-    margin-left: 83px;
+    margin: 0 56px 45px 83px;
+    margin-top: 0;
   }
 }

@@ -5,11 +5,11 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 20px 30px;
+  padding: 24px 30px 20px 30px;
 }
 
 .page-footer__item {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .page-footer__logo {
@@ -29,7 +29,7 @@
 
   .page-footer__item {
     margin-bottom: 0;
-    padding: 25px 0;
+    padding: 20px 0 25px;
   }
 
   .page-footer__logo {
@@ -40,7 +40,7 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1050px;
-    padding: 0 50px;
+    padding: 0;
     margin: 0 auto;
   }
 }

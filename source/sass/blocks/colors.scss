@@ -6,8 +6,9 @@
 
 .colors__title {
   position: relative;
+  margin-top: 3px;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -17,9 +18,9 @@
   &::before {
     content: "";
     position: absolute;
-    left: 70px;
+    left: 62px;
     top: 8px;
-    width: 180px;
+    width: 198px;
     height: 1px;
     background: $type-title-color;
   }
@@ -34,7 +35,7 @@
 }
 
 .colors__item {
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 
   &:last-child {
     margin-bottom: 0;
@@ -75,10 +76,12 @@
 
 @media (min-width: $tablet-width) {
   .colors {
+    margin-bottom: 14px;
     background: $form-bg;
   }
 
   .colors__wrapper {
+    position: relative;
     width: $tablet-width;
     padding: 55px 50px;
     margin: 0 auto;
@@ -87,6 +90,7 @@
 
   .colors__title {
     position: absolute;
+    top: 65px;
 
     &::before {
       width: 0;
@@ -97,29 +101,82 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 165px;
+    padding-top: 11px;
   }
 
   .colors__item {
     width: 50%;
+    margin-bottom: 58px;
+
+    &:nth-child(2n+2) .colors__label {
+      padding-left: 92px;
+    }
+
+    &:nth-child(2n+2) .colors__label::before {
+      left: 11px;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(6) {
+      margin-bottom: 0;
+    }
+  }
+
+  .colors__input:checked + .colors__label::before {
+    left: 2px;
+    width: 51px;
+    height: 48px;
+  }
+
+  .colors__label {
+    padding-left: 84px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 700;
+
+    &::before {
+      left: 2px;
+      width: 51px;
+      height: 48px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .colors {
+    margin-bottom: 0;
     background: $form-bg;
   }
 
   .colors__wrapper {
     width: 1150px;
     margin: 0 auto;
+    padding: 55px 50px 10px;
     box-sizing: border-box;
   }
 
   .colors__item {
     width: 30%;
+
+    &:nth-child(2n+2) .colors__label::before {
+      left: 0;
+    }
+
+    &:nth-child(2n+2) .colors__label {
+      padding-left: 81px;
+    }
   }
 
   .colors__list {
     padding-left: 175px;
+  }
+
+  .colors__title {
+    position: absolute;
+    top: 65px;
+    left: 110px;
   }
 }
