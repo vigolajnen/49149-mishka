@@ -16,7 +16,11 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="logo navigation__link">
-                <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+                </picture>
               </a>
             </li>
             <li class="navigation__item">
@@ -81,7 +85,11 @@
               <td class="week-product__value">15 см</td>
             </tr>
           </table>
-          <img class="week-product__pic" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="week-product__pic" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
+          </picture>
           <p class="week-product__price">Цена: 990 руб.</p>
           <button class="week-product__button button">Заказать</button>
         </div>
@@ -139,6 +147,11 @@
             </li>
           </ul>
           <div class="contacts__map">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__pic" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="карта">
+            </picture>
             <script class="contacts__script"></script>
           </div>
           <button class="contacts__button button" type="button">Напишите нам</button>
@@ -149,7 +162,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__item">
           <a class="page-footer__logo logo">
-            <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+            <img class="logo__pic" src="img/logo-footer.svg" alt="логотип">
           </a>
         </div>
         <div class="page-footer__item social">

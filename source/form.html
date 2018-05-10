@@ -16,7 +16,11 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="logo navigation__link" href="index.html">
-                <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+                </picture>
               </a>
             </li>
             <li class="navigation__item">
@@ -164,7 +168,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__item">
           <a class="page-footer__logo logo">
-            <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+            <img class="logo__pic" src="img/logo-footer.svg" alt="логотип">
           </a>
         </div>
         <div class="page-footer__item social">

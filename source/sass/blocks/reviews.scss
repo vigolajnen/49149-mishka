@@ -74,8 +74,13 @@
     box-sizing: border-box;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 35px 100%;
+    background-position: 0 100%;
     background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: auto 100%;
+      background-size: contain;
+    }
   }
 
   .reviews__wrapper {
