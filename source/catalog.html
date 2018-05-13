@@ -16,7 +16,11 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="logo navigation__link" href="index.html">
-                <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+                </picture>
               </a>
             </li>
             <li class="navigation__item">
@@ -56,7 +60,11 @@
         <ul class="catalog__list">
           <li class="catalog__item product">
             <a class="product__link" href="#">
-              <img class="product__pic" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="product__pic" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+              </picture>
             </a>
             <div class="product__inner">
               <div class="product__text">
@@ -73,7 +81,11 @@
           </li>
           <li class="catalog__item product">
             <a class="product__link" href="#">
-              <img class="product__pic" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="product__pic" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
+              </picture>
             </a>
             <div class="product__inner">
               <div class="product__text">
@@ -90,7 +102,11 @@
           </li>
           <li class="catalog__item product">
             <a class="product__link" href="#">
-              <img class="product__pic" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="product__pic" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+              </picture>
             </a>
             <div class="product__inner">
               <div class="product__text">
@@ -110,7 +126,11 @@
       <section class="video">
         <div class="video__wrapper">
           <h2 class="video__title">Процесс производства</h2>
-          <img class="video__pic" src="img/video-mobile@1x.jpg" alt="заглушка">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__pic" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="заглушка">
+          </picture>
           <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <button class="video__button button" type="button">Сделать заказ</button>
         </div>
@@ -120,7 +140,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__item">
           <a class="page-footer__logo logo">
-            <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+            <img class="logo__pic" src="img/logo-footer.svg" alt="логотип">
           </a>
         </div>
         <div class="page-footer__item social">

@@ -43,6 +43,15 @@
   text-decoration: none;
   border-bottom: 1px solid $link-border;
   box-sizing: border-box;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:focus {
+    color: #46c1ae;
+    opacity: 0.1;
+  }
 }
 
 .contacts__name {
@@ -72,6 +81,16 @@
 .contacts__button {
   padding: 14px 50px;
   margin: 0 30px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:focus {
+    color: #8d8d8d;
+    background-color: #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {

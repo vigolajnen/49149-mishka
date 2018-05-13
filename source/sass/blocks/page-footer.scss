@@ -35,6 +35,10 @@
   .page-footer__logo {
     display: block;
   }
+
+  .page-footer__logo .logo__pic {
+    width: 100px;
+  }
 }
 
 @media (min-width: $desktop-width) {

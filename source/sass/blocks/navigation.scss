@@ -187,7 +187,7 @@
     width: 48%;
 
     .navigation__link {
-      padding: 24px;
+      padding: 24px 0;
     }
   }
 
@@ -246,7 +246,14 @@
   .navigation__item:nth-child(1) {
     order: 4;
     width: 25%;
+    padding-left: 0;
     text-align: center;
+    border-left: 1px solid #ececec;
+    border-right: none;
+
+    .navigation__link {
+      padding: 10px 24px 10px 48px;
+    }
   }
 
   .navigation__item:nth-child(2) {
