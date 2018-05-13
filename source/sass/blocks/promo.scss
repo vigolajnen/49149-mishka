@@ -34,7 +34,7 @@
 
 .promo__inner {
   position: absolute;
-  bottom: -180px;
+  bottom: -203px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -91,15 +91,29 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    position: relative;
     justify-content: flex-start;
     width: $tablet-width;
-    min-height: 730px;
+    min-height: 740px;
     padding: 0 50px;
     margin: -90px auto 0;
     z-index: -1;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: cover;
     box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -35px;
+      z-index: 1;
+      height: 50px;
+      width: 100%;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat-x: repeat;
+      background-repeat-y: no-repeat;
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");

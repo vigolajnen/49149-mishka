@@ -71,15 +71,39 @@
   padding: 14px 83px;
   font-size: 17px;
   line-height: 20px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:focus {
+    color: #8d8d8d;
+    background-color: #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .week-product {
+    position: relative;
     width: $tablet-width;
     padding: 0 50px;
-    margin: 60px auto 0;
+    margin: 50px auto 0;
     box-sizing: border-box;
     overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 40px;
+      bottom: 0;
+      z-index: 10;
+      height: 25px;
+      width: 92%;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat-x: repeat;
+      background-repeat-y: no-repeat;
+    }
   }
 
   .week-product__mark {
@@ -139,10 +163,24 @@
 
 @media (min-width: $desktop-width) {
   .week-product {
+    position: relative;
     width: 1150px;
-    padding: 3px 50px 0 220px;
-    margin: 135px auto 30px;
+    padding: 3px 50px 27px 220px;
+    margin: 125px auto 0;
     box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 40px;
+      bottom: 0;
+      z-index: 10;
+      height: 25px;
+      width: 92%;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat-x: repeat;
+      background-repeat-y: no-repeat;
+    }
   }
 
   .week-product__title {

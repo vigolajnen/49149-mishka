@@ -23,6 +23,19 @@
   }
 }
 
+.social__link svg {
+  fill: #231f20;
+}
+
+.social__link:hover svg {
+  fill: #46c1ae;
+}
+
+.social__link:focus svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;

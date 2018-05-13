@@ -12,6 +12,12 @@
   }
 
   .logo__pic {
-    width: 100px;
+    width: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__pic {
+    width: 140px;
   }
 }
