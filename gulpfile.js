@@ -6,6 +6,9 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var rename = require("gulp-rename");
+var sprite = require("gulp-svgstore");
+var webp = require("gulp-webp");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -16,6 +19,12 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("serve", ["style"], function() {
