@@ -96,6 +96,16 @@
     font-size: 17px;
     line-height: 16px;
     font-weight: 700;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #444444;
+    }
+
+    &:focus {
+      color: #8d8d8d;
+      background-color: #444444;
+    }
   }
 }
 

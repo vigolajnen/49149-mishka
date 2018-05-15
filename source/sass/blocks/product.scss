@@ -4,6 +4,15 @@
   max-width: 100%;
   margin-bottom: 30px;
   border: 1px solid $product-border-color;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 #dddddd;
+  }
+
+  &:focus {
+    box-shadow: 0 3px 5px 0 #dddddd;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -36,6 +45,14 @@
   font-weight: 700;
   color: $title-color;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .product__info {
@@ -66,6 +83,20 @@
 .product__btn {
   padding: 0;
   border: none;
+  opacity: 0.3;
+}
+
+.product__btn svg {
+  fill: #231f20;
+}
+
+.product__btn svg:hover {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.product__btn svg:focus {
+  fill: #63d1bb;
   opacity: 0.3;
 }
 

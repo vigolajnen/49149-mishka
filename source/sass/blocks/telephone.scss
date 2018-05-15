@@ -7,7 +7,6 @@
 .telephone__wrapper {
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid $title-color;
 }
 
 .telephone__title {
@@ -38,12 +37,42 @@
   line-height: 18px;
   font-weight: 400;
   color: $text-color;
-  opacity: 0.3;
   border: none;
   background-color: transparent;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 95% 0;
+
+  border-bottom: 2px solid $title-color;
+  outline: none;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.telephone__input::-webkit-input-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 400;
+  color: lighten($text-color, 30%);
+}
+
+.telephone__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.telephone__input:focus:-moz-placeholder,
+.telephone__input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.telephone__input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 @media (min-width: $tablet-width) {

@@ -72,6 +72,14 @@
     height: 38px;
     border: 2px solid $title-color;
   }
+
+  &:hover::before {
+    border-color: #56c3b2;
+  }
+
+  &:focus::before {
+    border-color: #c7c7c7;
+  }
 }
 
 @media (min-width: $tablet-width) {

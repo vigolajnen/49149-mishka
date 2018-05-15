@@ -7,7 +7,6 @@
 .comment__wrapper {
   display: flex;
   flex-direction: column;
-  border: 2px solid $title-color;
 }
 
 .comment__title {
@@ -37,10 +36,18 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  color: $text-color;
+  color: lighten($text-color, 30%);
   resize: none;
-  opacity: 0.3;
-  border: none;
+  border: 2px solid $title-color;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -122,6 +122,23 @@
   font-weight: 700;
   color: $nav-link-color;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.navigation__link svg {
+  fill: #231f20;
+}
+
+.navigation__link:hover svg {
+  fill: #63d1bb;
+  opacity: 1;
 }
 
 .navigation__link--search {

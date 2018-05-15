@@ -7,7 +7,6 @@
 .email__wrapper {
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid $title-color;
 }
 
 .email__title {
@@ -42,8 +41,38 @@
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 95% 0;
-  opacity: 0.3;
   border: none;
+
+  border-bottom: 2px solid $title-color;
+  outline: none;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.email__input::-webkit-input-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 400;
+  color: lighten($text-color, 30%);
+}
+
+.email__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.email__input:focus:-moz-placeholder,
+.email__input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.email__input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 @media (min-width: $tablet-width) {
