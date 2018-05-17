@@ -5,6 +5,7 @@
 }
 
 .telephone__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -30,6 +31,21 @@
   }
 }
 
+.telephone__icon {
+  position: absolute;
+  z-index: 10;
+  right: 14px;
+  fill: #cccccc;
+
+  &:hover {
+    fill: #62d1ba;
+  }
+
+  &:focus {
+    fill: #62d1ba;
+  }
+}
+
 .telephone__input {
   position: relative;
   padding-bottom: 19px;
@@ -39,9 +55,6 @@
   color: $text-color;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 95% 0;
 
   border-bottom: 2px solid $title-color;
   outline: none;
@@ -79,6 +92,11 @@
   .telephone {
     position: relative;
     margin-bottom: 33px;
+  }
+
+  .telephone__icon {
+    position: absolute;
+    right: 24px;
   }
 
   .telephone__title {

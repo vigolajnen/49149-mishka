@@ -5,6 +5,7 @@
 }
 
 .email__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -30,6 +31,19 @@
   }
 }
 
+.email__icon {
+  position: absolute;
+  right: 14px;
+
+  &:hover {
+    fill: #62d1ba;
+  }
+
+  &:focus {
+    fill: #62d1ba;
+  }
+}
+
 .email__input {
   position: relative;
   padding-bottom: 15px;
@@ -38,9 +52,6 @@
   font-weight: 400;
   color: $text-color;
   background-color: transparent;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: 95% 0;
   border: none;
 
   border-bottom: 2px solid $title-color;
@@ -79,6 +90,11 @@
   .email {
     position: relative;
     margin-bottom: 0;
+  }
+
+  .email__icon {
+    position: absolute;
+    right: 24px;
   }
 
   .email__title {

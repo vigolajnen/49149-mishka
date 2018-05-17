@@ -43,7 +43,8 @@
 
 .promo__link {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   padding: 25px 30px 30px 30px;
   font-size: 16px;
   line-height: 24px;
@@ -55,32 +56,10 @@
   &:last-child {
     background-color: $promo-link-bg-dark;
   }
+}
 
-  &--interior::before {
-    content: "";
-    position: absolute;
-    top: 23px;
-    right: 35px;
-    width: 41px;
-    height: 63px;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 0.3;
-  }
-
-  &--toy::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 28px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 0.3;
-  }
+.promo__icon {
+  opacity: 0.3;
 }
 
 .promo__name {

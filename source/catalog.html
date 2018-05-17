@@ -146,8 +146,16 @@
         </ul>
       </div>
       <section class="video">
+        <svg class="video__icon video__icon--play" width="101" height="77">
+          <use xlink:href="img/sprite.svg#icon-play"></use>
+        </svg>
         <div class="video__wrapper">
-          <h2 class="video__title">Процесс производства</h2>
+          <h2 class="video__title">
+            <span>Процесс производства</span>
+            <svg class="video__icon" width="32" height="32">
+              <use xlink:href="img/sprite.svg#icon-video"></use>
+            </svg>
+          </h2>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
