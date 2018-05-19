@@ -46,7 +46,6 @@
 .user__border {
   display: block;
   width: 100%;
-  border-bottom: 2px solid $title-color;
 }
 
 .user__label {
@@ -59,13 +58,43 @@
 }
 
 .user__input {
+  width: 100%;
   padding-bottom: 16px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
   color: $text-color;
-  opacity: 0.3;
   border: none;
+  border-bottom: 2px solid $title-color;
+  outline: none;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.user__input::-webkit-input-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 400;
+  color: lighten($text-color, 30%);
+}
+
+.user__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.user__input:focus:-moz-placeholder,
+.user__input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.user__input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 @media (min-width: $tablet-width) {
@@ -106,11 +135,13 @@
   }
 
   .user__input {
+    width: 98%;
     padding-bottom: 13px;
     padding-left: 14px;
     font-size: 19px;
     line-height: 18px;
     font-weight: 400;
+    color: #444444;
   }
 }
 
