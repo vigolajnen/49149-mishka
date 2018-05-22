@@ -6,6 +6,7 @@
   min-height: 285px;
   padding: 0 30px;
   margin: 0 auto;
+  background-color: #dddddd;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -45,6 +46,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
   padding: 25px 30px 30px 30px;
   font-size: 16px;
   line-height: 24px;

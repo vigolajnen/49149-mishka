@@ -26,7 +26,7 @@
     background-position: 50% 50%;
   }
 
-  &--close {
+  &--closed {
     background-image: url("../img/icon-menu-close.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -42,16 +42,28 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  &--closed {
+    height: 80px;
+    visibility: hidden;
+  }
 }
 
 .navigation__item {
-  // display: none;
+  display: block;
   flex-grow: 1;
   width: 100%;
   height: 80px;
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
   box-sizing: border-box;
+
+  &--active {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: visible;
+  }
 }
 
 .navigation__item:nth-child(1) {
