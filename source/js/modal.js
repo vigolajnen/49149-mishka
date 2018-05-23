@@ -1,6 +1,6 @@
 "use strict";
 
-var modalOpen = document.querySelector(".product__btn");
+var modalOpen = document.querySelector(".week-product__button");
 var modal = document.querySelector(".size-choice");
 var modalBtn = document.querySelector(".size-choice__button");
 

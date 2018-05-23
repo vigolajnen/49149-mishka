@@ -14,20 +14,20 @@
 
 .page-footer__logo {
   display: none;
-}
-
-.page-footer__logo svg {
-  fill: #231f20;
   cursor: pointer;
-}
 
-.page-footer__logo:hover svg {
-  fill: #46c1ae;
-}
+  & svg {
+    fill: #231f20;
+  }
 
-.page-footer__logo:focus svg {
-  fill: #46c1ae;
-  opacity: 0.3;
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:focus svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

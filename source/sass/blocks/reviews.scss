@@ -1,5 +1,21 @@
 .reviews {
+  position: relative;
   margin-bottom: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -72px;
+    z-index: 10;
+    height: 8px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-position-x: -9px;
+    background-size: contain;
+  }
 }
 
 .reviews__wrapper {
@@ -17,10 +33,10 @@
 .reviews__item {
   display: none;
   margin: 0 0 28px 0;
-}
 
-.reviews__item--active {
-  display: block;
+  &--active {
+    display: block;
+  }
 }
 
 .reviews__text {
@@ -49,33 +65,33 @@
 
 .reviews__inner {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .reviews__prev {
-  padding: 10px 39px;
+  padding: 13px 39px 10px;
   border: 1px solid $reviews-border-color;
-}
 
-.reviews__prev svg:hover {
-  fill: #666666;
-}
+  &:hover svg {
+    fill: #666666;
+  }
 
-.reviews__prev svg:focus {
-  fill: #b2b2b2;
+  &:focus svg {
+    fill: #b2b2b2;
+  }
 }
 
 .reviews__next {
   padding: 10px 39px;
   border: 1px solid $reviews-border-color;
-}
 
-.reviews__next svg:hover {
-  fill: #666666;
-}
+  &:hover svg {
+    fill: #666666;
+  }
 
-.reviews__next svg:focus {
-  fill: #b2b2b2;
+  &:focus svg {
+    fill: #b2b2b2;
+  }
 }
 
 .reviews__button {
@@ -108,13 +124,15 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -135px;
+      bottom: -138px;
       z-index: 10;
-      height: 25px;
+      height: 15px;
       width: 100%;
       background-image: url("../img/bg-zigzag-line.svg");
       background-repeat-x: repeat;
       background-repeat-y: no-repeat;
+      background-position-x: -15px;
+      background-size: contain;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -191,11 +209,13 @@
       left: 27px;
       bottom: -90px;
       z-index: 10;
-      height: 25px;
-      width: 92%;
+      height: 20px;
+      width: 98%;
       background-image: url("../img/bg-zigzag-line.svg");
       background-repeat-x: repeat;
       background-repeat-y: no-repeat;
+      background-size: contain;
+      background-position-x: 9px;
     }
   }
 

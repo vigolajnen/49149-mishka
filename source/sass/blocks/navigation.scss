@@ -142,15 +142,15 @@
   &:focus {
     opacity: 0.3;
   }
-}
 
-.navigation__link svg {
-  fill: #231f20;
-}
+  & svg {
+    fill: #231f20;
+  }
 
-.navigation__link:hover svg {
-  fill: #63d1bb;
-  opacity: 1;
+  &:hover svg {
+    fill: #63d1bb;
+    opacity: 1;
+  }
 }
 
 .navigation__link--search {
@@ -181,6 +181,8 @@
   }
 
   .navigation__list {
+    position: relative;
+    z-index: 1;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -202,8 +204,15 @@
   }
 
   .navigation__item {
+    position: relative;
     width: auto;
     height: 90px;
+
+    & .navigation__svg {
+      position: absolute;
+      top: 24px;
+      left: 3px;
+    }
   }
 
   .navigation__item:nth-child(5) {

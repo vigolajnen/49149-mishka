@@ -16,24 +16,26 @@
 }
 
 .social__item {
-  margin-right: 40px;
+  margin-right: 36px;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
-.social__link svg {
-  fill: #231f20;
-}
+.social__link {
+  & svg {
+    fill: #231f20;
+  }
 
-.social__link:hover svg {
-  fill: #46c1ae;
-}
+  &:hover svg {
+    fill: #46c1ae;
+  }
 
-.social__link:focus svg {
-  fill: #46c1ae;
-  opacity: 0.3;
+  &:focus svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

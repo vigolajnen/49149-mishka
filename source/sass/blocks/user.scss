@@ -60,9 +60,11 @@
 .user__input {
   width: 100%;
   padding-bottom: 16px;
+  margin-left: -2px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
+  letter-spacing: -1px;
   color: $text-color;
   border: none;
   border-bottom: 2px solid $title-color;
@@ -75,26 +77,26 @@
   &:active {
     border-bottom: 2px solid #62d1ba;
   }
-}
 
-.user__input::-webkit-input-placeholder {
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: 400;
-  color: lighten($text-color, 30%);
-}
+  &::-webkit-input-placeholder {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+    color: lighten($text-color, 30%);
+  }
 
-.user__input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
 
-.user__input:focus:-moz-placeholder,
-.user__input:focus::-moz-placeholder {
-  color: transparent;
-}
+  &:focus:-moz-placeholder,
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
 
-.user__input:focus:-ms-input-placeholder {
-  color: transparent;
+  &:focus:-ms-input-placeholder {
+    color: transparent;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -107,6 +109,7 @@
 
   .user__title {
     position: absolute;
+    margin-top: 2px;
 
     &::before {
       width: 0;
@@ -135,12 +138,14 @@
   }
 
   .user__input {
-    width: 98%;
+    width: 96%;
+    margin-left: 1px;
     padding-bottom: 13px;
     padding-left: 14px;
     font-size: 19px;
     line-height: 18px;
     font-weight: 400;
+    letter-spacing: 0;
     color: #444444;
   }
 }
@@ -163,6 +168,6 @@
 
   .user__title {
     position: absolute;
-    left: 160px;
+    left: 135px;
   }
 }

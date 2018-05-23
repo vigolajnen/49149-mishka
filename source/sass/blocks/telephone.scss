@@ -34,24 +34,18 @@
 .telephone__icon {
   position: absolute;
   z-index: 10;
-  right: 14px;
+  right: 10px;
   fill: #cccccc;
-
-  &:hover {
-    fill: #62d1ba;
-  }
-
-  &:focus {
-    fill: #62d1ba;
-  }
 }
 
 .telephone__input {
   position: relative;
   padding-bottom: 19px;
+  margin-left: -2px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
+  letter-spacing: -1px;
   color: $text-color;
   border: none;
   background-color: transparent;
@@ -63,29 +57,37 @@
     border-bottom: 2px solid #62d1ba;
   }
 
+  &:hover .telephone__icon {
+    fill: #62d1ba;
+  }
+
+  &:focus .telephone__icon {
+    fill: #62d1ba;
+  }
+
   &:active {
     border-bottom: 2px solid #62d1ba;
   }
-}
 
-.telephone__input::-webkit-input-placeholder {
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: 400;
-  color: lighten($text-color, 30%);
-}
+  &::-webkit-input-placeholder {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+    color: lighten($text-color, 30%);
+  }
 
-.telephone__input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
 
-.telephone__input:focus:-moz-placeholder,
-.telephone__input:focus::-moz-placeholder {
-  color: transparent;
-}
+  &:focus:-moz-placeholder,
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
 
-.telephone__input:focus:-ms-input-placeholder {
-  color: transparent;
+  &:focus:-ms-input-placeholder {
+    color: transparent;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -119,6 +121,7 @@
     font-size: 19px;
     line-height: 18px;
     font-weight: 400;
+    letter-spacing: 0;
   }
 }
 
@@ -132,5 +135,9 @@
     position: absolute;
     top: 13px;
     left: 61px;
+  }
+
+  .telephone__icon {
+    right: 10px;
   }
 }
