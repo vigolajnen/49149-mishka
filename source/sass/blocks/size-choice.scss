@@ -9,6 +9,10 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
+.size-choice-show {
+  display: block;
+}
+
 .size-choice__wrapper {
   position: fixed;
   top: 50%;
@@ -87,4 +91,10 @@
   color: $size-choice-btn-color;
   background: $size-choice-btn-bg;
   border-color: $size-choice-btn-bg;
+}
+
+@media (min-width: $tablet-width) {
+  .size-choice__wrapper {
+    border: 1px solid $size-choice-border-color;
+  }
 }

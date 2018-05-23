@@ -5,6 +5,8 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var posthtml =require("gulp-posthtml");
+var htmlmin =require("gulp-htmlmin");
+var uglify =require("gulp-uglify");
 var include = require("posthtml-include");
 var imagemin = require("gulp-imagemin");
 var autoprefixer = require("autoprefixer");
@@ -15,6 +17,7 @@ var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
 var del = require("del");
 var run = require("run-sequence");
+var concat = require('gulp-concat');
 
 gulp.task("clean", function () {
   return del("build");
@@ -36,6 +39,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
@@ -50,6 +54,17 @@ gulp.task("style", function() {
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
+});
+
+gulp.task('js', function () {
+  gulp.src([
+      "source/js/picturefill.js",
+      "source/js/modal.js",
+      "source/js/navigation.js",
+    ])
+    .pipe(concat('script.min.js'))
+    .pipe(uglify({mangle: false}))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("images", function () {
@@ -83,6 +98,7 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "html",
+    "js",
     done
   );
 });
@@ -94,4 +110,5 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/js/**/*.js", ["js"]);
 });
