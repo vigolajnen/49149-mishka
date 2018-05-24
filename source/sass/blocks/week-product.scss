@@ -3,6 +3,7 @@
   margin-top: 230px;
   margin-bottom: 40px;
   padding: 0 30px;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -13,8 +14,7 @@
     height: 6px;
     width: 100%;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat-x: repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: repeat;
     background-position-x: -9px;
     background-size: contain;
   }
@@ -117,8 +117,7 @@
       height: 24px;
       width: 100%;
       background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat-x: repeat;
-      background-repeat-y: no-repeat;
+      background-repeat: repeat;
       background-position-x: -15px;
       background-size: contain;
     }
@@ -196,8 +195,7 @@
       height: 20px;
       width: 92%;
       background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat-x: repeat;
-      background-repeat-y: no-repeat;
+      background-repeat: repeat;
     }
   }
 

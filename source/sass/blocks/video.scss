@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .video__wrapper {
@@ -9,6 +10,7 @@
   flex-direction: column;
   margin: 0 30px 56px;
   border: 1px solid $video-border-color;
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 6px 10px 0 #dddddd;
@@ -58,6 +60,7 @@
   min-height: 150px;
   margin-bottom: 25px;
   background-color: #dddddd;
+  object-fit: cover;
 }
 
 .video__text {

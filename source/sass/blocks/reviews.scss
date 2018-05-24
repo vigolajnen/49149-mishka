@@ -1,6 +1,7 @@
 .reviews {
   position: relative;
   margin-bottom: 50px;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -11,8 +12,7 @@
     height: 6px;
     width: 100%;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat-x: repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: repeat;
     background-position-x: -9px;
     background-size: contain;
   }
@@ -129,8 +129,7 @@
       height: 15px;
       width: 100%;
       background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat-x: repeat;
-      background-repeat-y: no-repeat;
+      background-repeat: repeat;
       background-position-x: -15px;
       background-size: contain;
     }
@@ -211,8 +210,7 @@
       height: 20px;
       width: 98%;
       background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat-x: repeat;
-      background-repeat-y: no-repeat;
+      background-repeat: repeat;
       background-size: contain;
       background-position-x: 9px;
     }
