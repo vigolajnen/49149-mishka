@@ -115,7 +115,7 @@
     padding: 0 50px;
     margin: 0 auto 128px;
     box-sizing: border-box;
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("../img/index/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: 350px;
@@ -136,7 +136,6 @@
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: auto 100%;
       background-size: 350px;
     }
   }

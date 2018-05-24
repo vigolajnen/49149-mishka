@@ -56,9 +56,17 @@ gulp.task("style", function () {
     .pipe(gulp.dest("build/css"));
 });
 
+gulp.task('vender', function () {
+  gulp.src([
+      "source/js/picturefill.min.js",
+      "source/js/svg4everybody.min.js",
+    ])
+    .pipe(concat('vender.min.js'))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task('js', function () {
   gulp.src([
-      "source/js/picturefill.js",
       "source/js/modal.js",
       "source/js/catalog.js",
       "source/js/navigation.js",
@@ -85,7 +93,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/icon/icon-*.svg")
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
