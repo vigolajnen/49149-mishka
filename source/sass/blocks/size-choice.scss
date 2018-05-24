@@ -45,7 +45,7 @@
 }
 
 .size-choice__caption {
-  margin: 0;
+  margin: 0 auto;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -62,17 +62,7 @@
 }
 
 .size-choice__item {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
   margin-right: 5px;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: $text-color;
-  border: 2px solid $size-choice-item-border;
 
   &:last-child {
     margin-right: 0;
@@ -81,6 +71,29 @@
   &--active {
     border-color: $size-choice-item-active;
   }
+}
+
+.size-choice__label {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $text-color;
+  border: 2px solid $size-choice-item-border;
+}
+
+.size-choice__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.size-choice__input:checked + .size-choice__label {
+  border: 2px solid $size-choice-item-active;
 }
 
 .size-choice__button {
@@ -95,6 +108,11 @@
 
 @media (min-width: $tablet-width) {
   .size-choice__wrapper {
+    width: 300px;
     border: 1px solid $size-choice-border-color;
+  }
+
+  .size-choice__title {
+    width: auto;
   }
 }

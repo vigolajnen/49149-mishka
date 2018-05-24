@@ -215,7 +215,7 @@
             </picture>
             <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.623559318088!2d30.320465462181524!3d59.93838841668912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1527097468606" width="600" height="450" style="border:0" allowfullscreen></iframe>
           </div>
-          <button class="contacts__button button" type="button">Напишите нам</button>
+          <a class="contacts__button button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -253,7 +253,7 @@
         </div>
         <div class="page-footer__item copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__pic" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
               <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"></path>
             </svg>
@@ -264,13 +264,26 @@
     <section id="modal" class="size-choice">
       <div class="size-choice__wrapper">
         <h2 class="size-choice__title">Добавить в корзину</h2>
-        <p class="size-choice__caption">Выберите размер:</p>
-        <ul class="size-choice__list">
-          <li class="size-choice__item size-choice__item--active">S</li>
-          <li class="size-choice__item">M</li>
-          <li class="size-choice__item">L</li>
-        </ul>
-        <button class="size-choice__button button" type="button" tabindex="1">Добавить</button>
+        <form class="size-choice__form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="size-choice__fieldset">
+            <legend class="size-choice__caption">Выберите размер:</legend>
+            <ul class="size-choice__list">
+              <li class="size-choice__item">
+                <input class="size-choice__input visually-hidden" id="size-s" type="radio" name="type" value="S" checked="">
+                <label class="size-choice__label" for="size-s">S</label>
+              </li>
+              <li class="size-choice__item">
+                <input class="size-choice__input visually-hidden" id="size-m" type="radio" name="type" value="M">
+                <label class="size-choice__label" for="size-m">M</label>
+              </li>
+              <li class="size-choice__item">
+                <input class="size-choice__input visually-hidden" id="size-l" type="radio" name="type" value="L">
+                <label class="size-choice__label" for="size-l">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="size-choice__button button" type="submit" tabindex="1">Добавить</button>
+        </form>
       </div>
     </section>
     <script src="js/picturefill.min.js"></script>

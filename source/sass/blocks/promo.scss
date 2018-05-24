@@ -54,6 +54,20 @@
   color: $promo-link-color;
   background: $promo-link-bg;
   text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    margin-top: -5px;
+  }
+
+  &:focus .promo__name {
+    opacity: 0.3;
+    color: #8e8885;
+  }
+
+  &:focus .promo__icon {
+    opacity: 0.1;
+  }
 
   &:last-child {
     background-color: $promo-link-bg-dark;
@@ -73,12 +87,12 @@
 @media (min-width: $tablet-width) {
   .promo {
     position: relative;
+    z-index: 0;
     justify-content: flex-start;
     width: $tablet-width;
     min-height: 740px;
     padding: 0 50px;
     margin: -90px auto 0;
-    z-index: -1;
     background-image: url("../img/index/hero-tablet@1x.jpg");
     background-size: cover;
     box-sizing: border-box;
@@ -88,7 +102,7 @@
       position: absolute;
       left: 0;
       bottom: -38px;
-      z-index: 1;
+      z-index: 2;
       height: 50px;
       width: 100%;
       background-image: url("../img/bg-zigzag-fill.svg");
@@ -106,6 +120,7 @@
   .promo__inner {
     bottom: 0;
     left: 50px;
+    z-index: 1;
     flex-direction: row;
     width: 668px;
     margin: 0 auto;
@@ -144,9 +159,9 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    z-index: 0;
     width: 1150px;
     padding: 0 50px;
-    z-index: -1;
     background-image: url("../img/index/hero-desktop@1x.jpg");
     background-size: cover;
     box-sizing: border-box;
@@ -156,7 +171,7 @@
       position: absolute;
       left: 0;
       bottom: -35px;
-      z-index: 1;
+      z-index: 2;
       height: 50px;
       width: 102%;
       background-image: url("../img/bg-zigzag-fill.svg");
@@ -173,6 +188,7 @@
   }
 
   .promo__inner {
+    z-index: 1;
     flex-direction: row;
     width: 1050px;
     margin: 0 auto;
