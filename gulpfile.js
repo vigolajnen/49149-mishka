@@ -89,11 +89,7 @@ gulp.task("vender", function () {
 });
 
 gulp.task("jsmin", function () {
-  gulp.src([
-      "source/js/modal.js",
-      "source/js/catalog.js",
-      "source/js/navigation.js",
-    ])
+  gulp.src(["source/js/main.js"])
     .pipe(concat("script.min.js"))
     .pipe(uglify({mangle: false}))
     .pipe(gulp.dest("build/js"));

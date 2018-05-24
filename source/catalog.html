@@ -14,7 +14,7 @@
         </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
-            <li class="navigation__item">
+            <li class="navigation__item js-logo">
               <a class="logo navigation__link" href="index.html">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
@@ -85,7 +85,7 @@
               </div>
               <p class="product__subinner">
                 <span class="product__price">1 200 руб.</span>
-                <button class="product__btn button">
+                <button class="product__btn button modal--jump">
                   <svg width="21" height="19">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
@@ -112,7 +112,7 @@
               </div>
               <p class="product__subinner">
                 <span class="product__price">690 руб.</span>
-                <button class="product__btn button">
+                <button class="product__btn button modal--jump">
                   <svg width="21" height="19">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
@@ -139,7 +139,7 @@
               </div>
               <p class="product__subinner">
                 <span class="product__price">1 500 руб.</span>
-                <button class="product__btn button">
+                <button class="product__btn button modal--jump">
                   <svg width="21" height="19">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
@@ -218,29 +218,31 @@
         </div>
       </div>
     </footer>
-    <section id="modal" class="size-choice">
-      <div class="size-choice__wrapper">
-        <h2 class="size-choice__title">Добавить в корзину</h2>
-        <form class="size-choice__form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="size-choice__fieldset">
-            <legend class="size-choice__caption">Выберите размер:</legend>
-            <ul class="size-choice__list">
-              <li class="size-choice__item">
-                <input class="size-choice__input visually-hidden" id="size-s" type="radio" name="type" value="S" checked="">
-                <label class="size-choice__label" for="size-s">S</label>
-              </li>
-              <li class="size-choice__item">
-                <input class="size-choice__input visually-hidden" id="size-m" type="radio" name="type" value="M">
-                <label class="size-choice__label" for="size-m">M</label>
-              </li>
-              <li class="size-choice__item">
-                <input class="size-choice__input visually-hidden" id="size-l" type="radio" name="type" value="L">
-                <label class="size-choice__label" for="size-l">L</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="size-choice__button button" type="submit" tabindex="1">Добавить</button>
-        </form>
+    <section class="size-choice modal">
+      <div class="size-choice__fon">
+        <div class="size-choice__wrapper">
+          <h2 class="size-choice__title">Добавить в корзину</h2>
+          <form class="size-choice__form" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="size-choice__fieldset">
+              <legend class="size-choice__caption">Выберите размер:</legend>
+              <ul class="size-choice__list">
+                <li class="size-choice__item">
+                  <input class="size-choice__input visually-hidden" id="size-s" type="radio" name="type" value="S" checked="">
+                  <label class="size-choice__label" for="size-s">S</label>
+                </li>
+                <li class="size-choice__item">
+                  <input class="size-choice__input visually-hidden" id="size-m" type="radio" name="type" value="M">
+                  <label class="size-choice__label" for="size-m">M</label>
+                </li>
+                <li class="size-choice__item">
+                  <input class="size-choice__input visually-hidden" id="size-l" type="radio" name="type" value="L">
+                  <label class="size-choice__label" for="size-l">L</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="size-choice__button button" type="submit" tabindex="1">Добавить</button>
+          </form>
+        </div>
       </div>
     </section>
     <script src="js/vender.min.js"></script>

@@ -58,7 +58,7 @@
   border-right: 1px solid #ececec;
   box-sizing: border-box;
 
-  &--active {
+  &--visible {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
