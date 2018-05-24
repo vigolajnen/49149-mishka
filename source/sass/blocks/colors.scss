@@ -1,7 +1,7 @@
 .colors {
   position: relative;
   padding: 0;
-  margin: 0 0 40px;
+  margin: 0 0 23px;
   border: 0;
 }
 
@@ -9,7 +9,7 @@
   position: relative;
   margin-top: 3px;
   margin-right: 30px;
-  margin-bottom: 41px;
+  margin-bottom: 38px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -157,6 +157,12 @@
     background: $form-bg;
   }
 
+  .colors__wrapper {
+    position: relative;
+    width: 1150px;
+    margin: 0 auto;
+  }
+
   .colors__item {
     width: 30%;
 
@@ -179,7 +185,7 @@
 
   .colors__title {
     position: absolute;
-    top: 65px;
-    left: 125px;
+    top: 64px;
+    left: 110px;
   }
 }

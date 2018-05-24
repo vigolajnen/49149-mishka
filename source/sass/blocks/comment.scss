@@ -33,8 +33,10 @@
 .comment__textarea {
   min-height: 108px;
   padding: 15px;
+  margin-left: -2px;
   font-size: 17px;
   line-height: 18px;
+  letter-spacing: -1px;
   font-weight: 400;
   color: lighten($text-color, 30%);
   resize: none;
@@ -96,6 +98,7 @@
   .comment__textarea {
     font-size: 19px;
     line-height: 18px;
+    letter-spacing: 0;
   }
 }
 

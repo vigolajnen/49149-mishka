@@ -158,6 +158,12 @@
     box-sizing: border-box;
   }
 
+  .user__wrapper {
+    position: relative;
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
   .user__list {
     width: 700px;
     padding-left: 175px;
@@ -169,6 +175,6 @@
 
   .user__title {
     position: absolute;
-    left: 125px;
+    left: 62px;
   }
 }

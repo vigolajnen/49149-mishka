@@ -68,55 +68,59 @@
         <p class="form-order__caption">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <ul class="form-order__list">
           <li class="form-order__item">
-            <fieldset class="type">
-              <legend class="type__title">Тип</legend>
-              <ul class="type__list">
-                <li class="type__item">
-                  <input class="type__input visually-hidden" id="type-1" type="radio" name="type" value="Аксессуар для интерьера" checked="">
-                  <label class="type__label" for="type-1">Аксессуар для интерьера</label>
-                </li>
-                <li class="type__item">
-                  <input class="type__input visually-hidden" id="type-2" type="radio" name="type" value="Детская игрушка">
-                  <label class="type__label" for="type-2">Детская игрушка</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="type">
+              <div class="type__wrapper">
+                <p class="type__title">Тип</p>
+                <ul class="type__list">
+                  <li class="type__item">
+                    <input class="type__input visually-hidden" id="type-1" type="radio" name="type" value="Аксессуар для интерьера" checked="">
+                    <label class="type__label" for="type-1">Аксессуар для интерьера</label>
+                  </li>
+                  <li class="type__item">
+                    <input class="type__input visually-hidden" id="type-2" type="radio" name="type" value="Детская игрушка">
+                    <label class="type__label" for="type-2">Детская игрушка</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="form-order__item">
-            <fieldset class="colors">
-              <legend class="colors__title">Цвет</legend>
-              <ul class="colors__list">
-                <li class="colors__item">
-                  <input class="colors__input visually-hidden" id="colors1" type="checkbox" name="colors1" value="Белый" checked="">
-                  <label class="colors__label" for="colors1">Белый</label>
-                </li>
-                <li class="colors__item">
-                  <input class="colors__input visually-hidden" id="colors2" type="checkbox" name="colors2" value="Серый" checked="">
-                  <label class="colors__label" for="colors2">Серый</label>
-                </li>
-                <li class="colors__item">
-                  <input class="colors__input visually-hidden" id="colors3" type="checkbox" name="colors3" value="«Тиффани»">
-                  <label class="colors__label" for="colors3">«Тиффани»</label>
-                </li>
-                <li class="colors__item">
-                  <input class="colors__input visually-hidden" id="colors4" type="checkbox" name="colors4" value="Черный">
-                  <label class="colors__label" for="colors4">Черный</label>
-                </li>
-                <li class="colors__item">
-                  <input class="colors__input visually-hidden" id="colors5" type="checkbox" name="colors5" value="Розовый">
-                  <label class="colors__label" for="colors5">Розовый</label>
-                </li>
-                <li class="colors__item">
-                  <input class="colors__input visually-hidden" id="colors6" type="checkbox" name="colors6" value="Оранжевый">
-                  <label class="colors__label" for="colors6">Оранжевый</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="colors">
+              <div class="colors__wrapper">
+                <p class="colors__title">Цвет</p>
+                <ul class="colors__list">
+                  <li class="colors__item">
+                    <input class="colors__input visually-hidden" id="colors1" type="checkbox" name="colors1" value="Белый" checked="">
+                    <label class="colors__label" for="colors1">Белый</label>
+                  </li>
+                  <li class="colors__item">
+                    <input class="colors__input visually-hidden" id="colors2" type="checkbox" name="colors2" value="Серый" checked="">
+                    <label class="colors__label" for="colors2">Серый</label>
+                  </li>
+                  <li class="colors__item">
+                    <input class="colors__input visually-hidden" id="colors3" type="checkbox" name="colors3" value="«Тиффани»">
+                    <label class="colors__label" for="colors3">«Тиффани»</label>
+                  </li>
+                  <li class="colors__item">
+                    <input class="colors__input visually-hidden" id="colors4" type="checkbox" name="colors4" value="Черный">
+                    <label class="colors__label" for="colors4">Черный</label>
+                  </li>
+                  <li class="colors__item">
+                    <input class="colors__input visually-hidden" id="colors5" type="checkbox" name="colors5" value="Розовый">
+                    <label class="colors__label" for="colors5">Розовый</label>
+                  </li>
+                  <li class="colors__item">
+                    <input class="colors__input visually-hidden" id="colors6" type="checkbox" name="colors6" value="Оранжевый">
+                    <label class="colors__label" for="colors6">Оранжевый</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="form-order__item">
-            <div class="form-order__wrapper">
-              <fieldset class="form-order__user user">
-                <legend class="user__title">ФИО</legend>
+            <div class="form-order__user user">
+              <div class="user__wrapper">
+                <p class="user__title">ФИО</p>
                 <ul class="user__list">
                   <li class="user__item">
                     <label class="user__label" for="name">Имя:</label>
@@ -137,7 +141,7 @@
                     </div>
                   </li>
                 </ul>
-              </fieldset>
+              </div>
             </div>
             <div class="phone-email">
               <div class="phone-email__wrapper telephone">

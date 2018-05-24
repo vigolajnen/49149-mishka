@@ -6,6 +6,7 @@
 
 .type__title {
   position: relative;
+  margin-top: 0;
   margin-right: 30px;
   margin-bottom: 30px;
   font-size: 17px;
@@ -96,6 +97,7 @@
     position: absolute;
     left: 0;
     top: 75px;
+    margin: 0;
 
     &::before {
       width: 0;
@@ -138,17 +140,23 @@
 
 @media (min-width: $desktop-width) {
   .type {
-    width: 1150px;
+    width: $desktop-width;
     box-sizing: border-box;
   }
 
+  .type__wrapper {
+    position: relative;
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
   .type__list {
-    padding-left: 154px;
+    padding-left: 163px;
   }
 
   .type__title {
     position: absolute;
-    left: 79px;
-    top: 74px;
+    left: 40px;
+    top: 19px;
   }
 }
