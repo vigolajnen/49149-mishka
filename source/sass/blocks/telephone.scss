@@ -1,6 +1,5 @@
 .telephone {
   padding: 0;
-  margin: 0 0 31px;
   border: 0;
 }
 
@@ -8,6 +7,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0 0 31px;
 }
 
 .telephone__title {
@@ -34,7 +34,8 @@
 .telephone__icon {
   position: absolute;
   z-index: 10;
-  right: 10px;
+  right: 7px;
+  top: 35px;
   fill: #cccccc;
 }
 
@@ -100,11 +101,13 @@
   .telephone__icon {
     position: absolute;
     right: 24px;
+    top: 0;
   }
 
   .telephone__title {
     position: absolute;
-    top: 13px;
+    top: 7px;
+    left: -164px;
 
     &::before {
       width: 0;
@@ -114,6 +117,7 @@
   .telephone__wrapper {
     margin-left: 165px;
     margin-top: 7px;
+    margin-bottom: 35px;
   }
 
   .telephone__input {
@@ -134,8 +138,8 @@
 
   .telephone__title {
     position: absolute;
-    top: 13px;
-    left: 61px;
+    top: 6px;
+    left: -114px;
   }
 
   .telephone__icon {

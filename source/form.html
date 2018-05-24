@@ -138,36 +138,29 @@
               </ul>
             </fieldset>
             <div class="phone-email">
-              <div class="phone-email__wrapper">
-                <fieldset class="form-order__telephone telephone">
-                  <legend class="telephone__title">Тел</legend>
-                  <div class="telephone__wrapper">
-                    <svg class="telephone__icon" width="25" height="25">
-                      <use xlink:href="img/sprite.svg#icon-phone"></use>
-                    </svg>
-                    <label class="visually-hidden" for="telephone">Телефон</label>
-                    <input class="telephone__input" type="tel" id="telephone" name="telephone" placeholder="+7 XXX XX XX*">
-                  </div>
-                </fieldset>
-                <fieldset class="form-order__email email">
-                  <legend class="email__title">E-mail</legend>
-                  <div class="email__wrapper">
-                    <svg class="email__icon" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#icon-mail"></use>
-                    </svg>
-                    <label class="visually-hidden" for="email">E-mail</label>
-                    <input class="email__input" type="email" id="email" name="email" placeholder="Ваш Email*">
-                  </div>
-                </fieldset>
+              <div class="phone-email__wrapper telephone">
+                <div class="telephone__wrapper">
+                  <svg class="telephone__icon" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <label class="telephone__title" for="telephone">Тел</label>
+                  <input class="telephone__input" type="tel" id="telephone" name="telephone" placeholder="+7 XXX XX XX*">
+                </div>
+                <div class="email__wrapper">
+                  <svg class="email__icon" width="32" height="32">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <label class="email__title" for="email">E-mail</label>
+                  <input class="email__input" type="email" id="email" name="email" placeholder="Ваш Email*">
+                </div>
               </div>
             </div>
-            <fieldset class="comment">
-              <legend class="comment__title">Доп</legend>
+            <div class="comment">
               <div class="comment__wrapper">
-                <label class="visually-hidden" for="comment">Текст комментария:</label>
+                <label class="comment__title" for="comment">Доп</label>
                 <textarea class="comment__textarea" placeholder="Опишите все ваши пожелания к заказу" name="comment" id="comment" cols="20" rows="5"></textarea>
               </div>
-            </fieldset>
+            </div>
           </li>
         </ul>
         <div class="form-order__inner">

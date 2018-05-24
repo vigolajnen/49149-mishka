@@ -197,7 +197,8 @@
   }
 
   .navigation__link--search {
-    width: 78px;
+    width: 77px;
+    height: 30px;
     padding-left: 0;
     font-size: 0;
     text-align: center;
@@ -293,6 +294,11 @@
       padding: 10px 24px 10px 48px;
     }
   }
+
+  .navigation__link--search {
+    border-left: 1px solid #ececec;
+  }
+
 
   .navigation__item:nth-child(2) {
     order: 1;
