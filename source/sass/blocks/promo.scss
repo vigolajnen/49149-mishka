@@ -57,6 +57,7 @@
   background: $promo-link-bg;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.2s;
 
   &:hover,
   &:focus {

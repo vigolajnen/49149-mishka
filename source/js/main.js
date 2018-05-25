@@ -20,14 +20,13 @@ if (orderLinks.length > 0) {
       orderPopup.classList.add("js-order-popup--show");
     });
   };
-}
 
-window.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (!evt.target.className.includes("size-choice")) {
-    orderPopup.classList.remove("js-order-popup--show");
-  }
-});
+  window.addEventListener("click", function (evt) {
+    if (evt.target.classList.contains("size-choice__overlay")) {
+      orderPopup.classList.remove("js-order-popup--show");
+    }
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
