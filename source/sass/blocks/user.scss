@@ -86,15 +86,9 @@
     color: lighten($text-color, 30%);
   }
 
-  &:focus::-webkit-input-placeholder {
-    color: transparent;
-  }
-
+  &:focus::-webkit-input-placeholder,
   &:focus:-moz-placeholder,
-  &:focus::-moz-placeholder {
-    color: transparent;
-  }
-
+  &:focus::-moz-placeholder,
   &:focus:-ms-input-placeholder {
     color: transparent;
   }

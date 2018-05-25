@@ -17,7 +17,7 @@
             <li class="navigation__item js-logo">
               <a class="logo navigation__link" href="index.html">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                   <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
                 </picture>
@@ -146,18 +146,18 @@
             <div class="phone-email">
               <div class="phone-email__wrapper telephone">
                 <div class="telephone__wrapper">
+                  <label class="telephone__title" for="telephone">Тел</label>
+                  <input class="telephone__input" type="tel" id="telephone" name="telephone" placeholder="+7 XXX XX XX*">
                   <svg class="telephone__icon" width="25" height="25">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
-                  <label class="telephone__title" for="telephone">Тел</label>
-                  <input class="telephone__input" type="tel" id="telephone" name="telephone" placeholder="+7 XXX XX XX*">
                 </div>
                 <div class="email__wrapper">
+                  <label class="email__title" for="email">E-mail</label>
+                  <input class="email__input" type="email" id="email" name="email" placeholder="Ваш Email*">
                   <svg class="email__icon" width="32" height="32">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
                   </svg>
-                  <label class="email__title" for="email">E-mail</label>
-                  <input class="email__input" type="email" id="email" name="email" placeholder="Ваш Email*">
                 </div>
               </div>
             </div>
@@ -217,8 +217,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/vender.min.js"></script>
+    <script src="js/vendor.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="js/script.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

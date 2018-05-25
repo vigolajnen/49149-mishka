@@ -1,11 +1,7 @@
-.modal {
+.js-order-popup {
   display: none;
 
   &--show {
     display: block;
-  }
-
-  &--close {
-    display: none;
   }
 }

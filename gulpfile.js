@@ -79,18 +79,18 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("vender", function () {
+gulp.task("vendor", function () {
   gulp.src([
       "source/js/picturefill.min.js",
       "source/js/svg4everybody.min.js",
     ])
-    .pipe(concat("vender.min.js"))
+    .pipe(concat("vendor.min.js"))
     .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("jsmin", function () {
   gulp.src(["source/js/main.js"])
-    .pipe(concat("script.min.js"))
+    .pipe(concat("main.min.js"))
     .pipe(uglify({mangle: false}))
     .pipe(gulp.dest("build/js"));
 });
@@ -117,7 +117,7 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "html",
-    "vender",
+    "vendor",
     "jsmin",
     done
   );

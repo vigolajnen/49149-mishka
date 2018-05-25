@@ -17,7 +17,7 @@
             <li class="navigation__item js-logo">
               <a class="logo navigation__link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                   <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
                 </picture>
@@ -100,16 +100,16 @@
             </tr>
           </table>
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/triple-set-desktop@1x.webp 1x, img/index/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/triple-set-desktop@1x.webp 1x, img/index/triple-set-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/index/triple-set-tablet@1x.webp 1x, img/index/triple-set-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/index/triple-set-mobile@1x.webp 1x, img/index/triple-set-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/index/triple-set-desktop@1x.jpg 1x, img/index/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 1150px)" srcset="img/index/triple-set-desktop@1x.jpg 1x, img/index/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/index/triple-set-tablet@1x.jpg 1x, img/index/triple-set-tablet@2x.jpg 2x">
             <img class="week-product__pic" src="img/index/triple-set-mobile@1x.jpg" srcset="img/index/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
           </picture>
           <p class="week-product__price">Цена: 990 руб.</p>
-          <button class="week-product__button button modal--jump">Заказать</button>
+          <button class="week-product__button button js-order">Заказать</button>
         </div>
       </section>
       <section class="advantages">
@@ -205,11 +205,11 @@
           </ul>
           <div class="contacts__map">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/map-desktop@1x.webp 1x, img/index/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/map-desktop@1x.webp 1x, img/index/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/index/map-tablet@1x.webp 1x, img/index/map-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/index/map-mobile@1x.webp 1x, img/index/map-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/index/map-desktop@1x.jpg 1x, img/index/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 1150px)" srcset="img/index/map-desktop@1x.jpg 1x, img/index/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/index/map-tablet@1x.jpg 1x, img/index/map-tablet@2x.jpg 2x">
               <img class="contacts__pic" src="img/index/map-mobile@1x.jpg" srcset="img/index/map-mobile@2x.jpg 2x" alt="карта">
             </picture>
@@ -261,8 +261,8 @@
         </div>
       </div>
     </footer>
-    <section class="size-choice modal">
-      <div class="size-choice__fon">
+    <section class="size-choice js-order-popup">
+      <div class="size-choice__overlay">
         <div class="size-choice__wrapper">
           <h2 class="size-choice__title">Добавить в корзину</h2>
           <form class="size-choice__form" method="post" action="https://echo.htmlacademy.ru">
@@ -288,8 +288,8 @@
         </div>
       </div>
     </section>
-    <script src="js/vender.min.js"></script>
+    <script src="js/vendor.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="js/script.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

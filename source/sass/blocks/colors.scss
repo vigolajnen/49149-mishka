@@ -104,7 +104,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 67px 50px;
-    padding-left: 214px;
+    padding-left: 209px;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -131,10 +131,9 @@
   }
 
   .colors__input:checked + .colors__label::before {
-    left: 2px;
+    left: 11px;
     width: 51px;
     height: 48px;
-    margin-left: 5px;
   }
 
   .colors__label {
@@ -144,7 +143,7 @@
     font-weight: 700;
 
     &::before {
-      left: 2px;
+      left: 11px;
       width: 51px;
       height: 48px;
     }
@@ -187,5 +186,15 @@
     position: absolute;
     top: 64px;
     left: 110px;
+  }
+
+  .colors__input:checked + .colors__label::before {
+    left: 5px;
+  }
+
+  .colors__label {
+    &::before {
+      left: 5px;
+    }
   }
 }

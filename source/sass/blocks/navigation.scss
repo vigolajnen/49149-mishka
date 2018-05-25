@@ -19,12 +19,9 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-
-  &--open {
-    background-image: url("../img/icon/icon-menu-open.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
+  background-image: url("../img/icon/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   &--closed {
     background-image: url("../img/icon/icon-menu-close.svg");

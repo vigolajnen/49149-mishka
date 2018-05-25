@@ -35,14 +35,7 @@
   position: absolute;
   right: 3px;
   top: 33px;
-
-  &:hover {
-    fill: #62d1ba;
-  }
-
-  &:focus {
-    fill: #62d1ba;
-  }
+  fill: #cccccc;
 }
 
 .email__input {
@@ -76,17 +69,19 @@
     color: lighten($text-color, 30%);
   }
 
-  &:focus::-webkit-input-placeholder {
-    color: transparent;
-  }
-
+  &:focus::-webkit-input-placeholder,
   &:focus:-moz-placeholder,
-  &:focus::-moz-placeholder {
-    color: transparent;
-  }
-
+  &:focus::-moz-placeholder,
   &:focus:-ms-input-placeholder {
     color: transparent;
+  }
+
+  &:hover + .email__icon {
+    fill: #62d1ba;
+  }
+
+  &:focus + .email__icon {
+    fill: #62d1ba;
   }
 }
 

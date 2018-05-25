@@ -2,42 +2,38 @@
 
 var navToggle = document.querySelector(".navigation__toggle");
 var navMainList = document.querySelector(".navigation__list");
-var navItem = document.querySelector(".js-logo");
+var logo = document.querySelector(".js-logo");
 
 navToggle.addEventListener("click", function() {
   navMainList.classList.toggle("navigation__list--closed");
-  if (navToggle.classList.contains("navigation__toggle--closed")) {
-    navToggle.classList.remove("navigation__toggle--closed");
-    navToggle.classList.add("navigation__toggle--open");
-    navItem.classList.add("navigation__item--visible");
-  } else {
-    navToggle.classList.add("navigation__toggle--closed");
-    navToggle.classList.remove("navigation__toggle--open");
-    navItem.classList.remove("navigation__item--visible");
-  }
+  navToggle.classList.toggle("navigation__toggle--closed");
+  logo.classList.toggle("navigation__item--visible");
 });
 
-var links = document.querySelectorAll(".modal--jump");
-var modal = document.querySelector(".modal");
-var close = modal.querySelector(".size-choice__fon");
+var orderLinks = document.querySelectorAll(".js-order");
+var orderPopup = document.querySelector(".js-order-popup");
 
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modal.classList.add("modal--show");
-  });
-};
+if (orderLinks.length > 0) {
+  for (var i = 0; i < orderLinks.length; i++) {
+    orderLinks[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      orderPopup.classList.add("js-order-popup--show");
+    });
+  };
+}
 
-close.addEventListener("click", function (evt) {
+window.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modal.classList.remove("modal--show");
+  if (!evt.target.className.includes("size-choice")) {
+    orderPopup.classList.remove("js-order-popup--show");
+  }
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (modal.classList.contains("modal--show")) {
-      modal.classList.remove("modal--show")
+    if (orderPopup.classList.contains("js-order-popup--show")) {
+      orderPopup.classList.remove("js-order-popup--show")
     }
   }
 });

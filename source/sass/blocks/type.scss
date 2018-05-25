@@ -146,17 +146,17 @@
 
   .type__wrapper {
     position: relative;
-    width: $desktop-width;
+    max-width: 953px;
     margin: 0 auto;
   }
 
   .type__list {
-    padding-left: 163px;
+    padding-left: 138px;
   }
 
   .type__title {
     position: absolute;
-    left: 40px;
+    left: 15px;
     top: 19px;
   }
 }
