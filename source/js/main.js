@@ -26,13 +26,13 @@ if (orderLinks.length > 0) {
       orderPopup.classList.remove("js-order-popup--show");
     }
   });
-}
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (orderPopup.classList.contains("js-order-popup--show")) {
-      orderPopup.classList.remove("js-order-popup--show")
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (orderPopup.classList.contains("js-order-popup--show")) {
+        orderPopup.classList.remove("js-order-popup--show")
+      }
     }
-  }
-});
+  });
+}
