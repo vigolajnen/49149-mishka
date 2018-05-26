@@ -70,10 +70,10 @@
   line-height: 30px;
   font-weight: 400;
   color: $address-color;
+}
 
-  span {
-    display: block;
-  }
+.contacts__address span {
+  display: block;
 }
 
 .contacts__map {
@@ -147,7 +147,7 @@
   .contacts__item {
     margin-right: 25px;
 
-    &last-child {
+    &:last-child {
       margin-right: 0;
     }
   }
@@ -170,11 +170,11 @@
     font-size: 17px;
     line-height: 30px;
     font-weight: 400;
+  }
 
-    span {
-      display: inline-block;
-      vertical-align: middle;
-    }
+  .contacts__address span {
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .contacts__map {

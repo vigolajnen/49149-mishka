@@ -75,14 +75,14 @@
   &:focus:-ms-input-placeholder {
     color: transparent;
   }
+}
 
-  &:hover + .email__icon {
-    fill: #62d1ba;
-  }
+.email__input:hover + .email__icon {
+  fill: #62d1ba;
+}
 
-  &:focus + .email__icon {
-    fill: #62d1ba;
-  }
+.email__input:focus + .email__icon {
+  fill: #62d1ba;
 }
 
 @media (min-width: $tablet-width) {

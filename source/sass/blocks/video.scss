@@ -48,10 +48,10 @@
 
 .video__link {
   display: block;
+}
 
-  &:focus .video__icon {
-    opacity: 0.7;
-  }
+.video__link:focus .video__icon {
+  opacity: 0.7;
 }
 
 .video__pic {
@@ -157,14 +157,14 @@
   .video__wrapper {
     width: 370px;
     min-height: 454px;
+  }
 
-    &:hover .video__pic {
-      box-shadow: -6px 6px 10px 0 #dddddd;
-    }
+  .video__wrapper:hover .video__pic {
+    box-shadow: -6px 6px 10px 0 #dddddd;
+  }
 
-    &:focus .video__pic {
-      box-shadow: -3px 3px 5px 0 #dddddd;
-    }
+  .video__wrapper:focus .video__pic {
+    box-shadow: -3px 3px 5px 0 #dddddd;
   }
 
   .video__title {

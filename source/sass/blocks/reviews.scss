@@ -70,27 +70,27 @@
 .reviews__prev {
   padding: 13px 39px 10px;
   border: 1px solid $reviews-border-color;
+}
 
-  &:hover svg {
-    fill: #666666;
-  }
+.reviews__prev:hover svg {
+  fill: #666666;
+}
 
-  &:focus svg {
-    fill: #b2b2b2;
-  }
+.reviews__prev:focus svg {
+  fill: #b2b2b2;
 }
 
 .reviews__next {
   padding: 10px 39px;
   border: 1px solid $reviews-border-color;
+}
 
-  &:hover svg {
-    fill: #666666;
-  }
+.reviews__next:hover svg {
+  fill: #666666;
+}
 
-  &:focus svg {
-    fill: #b2b2b2;
-  }
+.reviews__next:focus svg {
+  fill: #b2b2b2;
 }
 
 .reviews__button {

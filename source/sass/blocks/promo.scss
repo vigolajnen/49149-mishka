@@ -28,10 +28,10 @@
   font-weight: 700;
   color: $title-color;
   text-align: center;
+}
 
-  span {
-    display: block;
-  }
+.promo__title span {
+  display: block;
 }
 
 .promo__inner {
@@ -139,10 +139,10 @@
     margin-top: 150px;
     font-size: 43px;
     line-height: 50px;
+  }
 
-    span {
-      display: inline;
-    }
+  .promo__title span {
+    display: inline;
   }
 
   .promo__link {

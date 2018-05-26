@@ -89,20 +89,20 @@
   padding: 0;
   border: none;
   opacity: 0.3;
+}
 
-  & svg {
-    fill: #231f20;
-  }
+.product__btn svg {
+  fill: #231f20;
+}
 
-  &:hover svg {
-    fill: #63d1bb;
-    opacity: 1;
-  }
+.product__btn:hover svg {
+  fill: #63d1bb;
+  opacity: 1;
+}
 
-  &:focus svg {
-    fill: #63d1bb;
-    opacity: 0.3;
-  }
+.product__btn:focus svg {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

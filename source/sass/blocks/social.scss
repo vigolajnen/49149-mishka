@@ -23,19 +23,17 @@
   }
 }
 
-.social__link {
-  & svg {
-    fill: #231f20;
-  }
+.social__link svg {
+  fill: #231f20;
+}
 
-  &:hover svg {
-    fill: #46c1ae;
-  }
+.social__link:hover svg {
+  fill: #46c1ae;
+}
 
-  &:focus svg {
-    fill: #46c1ae;
-    opacity: 0.3;
-  }
+.social__link:focus svg {
+  fill: #46c1ae;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
