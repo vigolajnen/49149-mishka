@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  margin-bottom: 37px;
+  margin-bottom: 29px;
   border: 1px solid $product-border-color;
   overflow: hidden;
 
@@ -21,6 +21,7 @@
 
 .product__link {
   display: flex;
+  height: 197px;
 }
 
 .product picture {
@@ -36,7 +37,7 @@
 }
 
 .product__inner {
-  padding: 21px 27px;
+  padding: 27px;
 }
 
 .product__title {
@@ -108,12 +109,13 @@
 @media (min-width: $tablet-width) {
   .product {
     flex-direction: row;
-    margin-bottom: 47px;
+    margin-bottom: 51px;
   }
 
   .product__link {
     display: flex;
     width: 50%;
+    height: 334px;
   }
 
   .product__pic {
@@ -125,14 +127,14 @@
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
-    padding: 27px 29px 32px;
+    padding: 27px 29px 28px;
     box-sizing: border-box;
   }
 
   .product__title {
     max-width: 240px;
     margin: 0;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -142,6 +144,7 @@
     margin: 0;
     font-size: 15px;
     line-height: 30px;
+    letter-spacing: -0.2px;
     font-weight: 400;
   }
 
@@ -160,12 +163,12 @@
     margin-bottom: 48px;
 
     &:last-child {
-      margin-bottom: 58px;
+      margin-bottom: 48px;
     }
+  }
 
-    &:last-child .product__info {
-      margin-bottom: 15px;
-    }
+  .product:last-child .product__info {
+    margin-bottom: 15px;
   }
 
   .product__item {
@@ -180,7 +183,7 @@
 
   .product__inner {
     width: 100%;
-    padding: 25px;
+    padding: 23px 25px;
     box-sizing: border-box;
   }
 
