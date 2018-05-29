@@ -92,16 +92,16 @@
   opacity: 0.3;
 }
 
-.product__btn svg {
+.product__btn .product__icon {
   fill: #231f20;
 }
 
-.product__btn:hover svg {
+.product__btn:hover .product__icon {
   fill: #63d1bb;
   opacity: 1;
 }
 
-.product__btn:focus svg {
+.product__btn:focus .product__icon {
   fill: #63d1bb;
   opacity: 0.3;
 }

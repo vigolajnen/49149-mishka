@@ -5,9 +5,9 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link href="fonts/opensans.woff">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link href="fonts/opensansbold.woff">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -175,12 +175,12 @@
             </blockquote>
             <div class="reviews__inner">
               <button class="reviews__prev button" type="button" aria-label="Предыдущий отзыв">
-                <svg width="50" height="27">
+                <svg class="reviews__icon reviews__icon--left-arrow" width="50" height="27">
                   <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
                 </svg>
               </button>
               <button class="reviews__next button" type="button" aria-label="Следующий отзыв">
-                <svg width="50" height="27">
+                <svg class="reviews__icon reviews__icon--right-arrow" width="50" height="27">
                   <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
                 </svg>
               </button>

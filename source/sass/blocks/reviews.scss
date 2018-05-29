@@ -72,11 +72,11 @@
   border: 1px solid $reviews-border-color;
 }
 
-.reviews__prev:hover svg {
+.reviews__prev:hover .reviews__icon {
   fill: #666666;
 }
 
-.reviews__prev:focus svg {
+.reviews__prev:focus .reviews__icon {
   fill: #b2b2b2;
 }
 
@@ -85,11 +85,11 @@
   border: 1px solid $reviews-border-color;
 }
 
-.reviews__next:hover svg {
+.reviews__next:hover .reviews__icon {
   fill: #666666;
 }
 
-.reviews__next:focus svg {
+.reviews__next:focus .reviews__icon {
   fill: #b2b2b2;
 }
 
