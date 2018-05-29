@@ -23,9 +23,9 @@
   &::before {
     content: "";
     position: absolute;
-    left: 70px;
+    left: 65px;
     top: 8px;
-    width: 180px;
+    width: 200px;
     height: 1px;
     background: $type-title-color;
   }
@@ -42,11 +42,11 @@
 .telephone__input {
   position: relative;
   padding-bottom: 19px;
-  margin-left: -2px;
+  margin-left: 0;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: -1px;
+  letter-spacing: 0;
   color: $text-color;
   border: none;
   background-color: transparent;
@@ -111,12 +111,12 @@
   .telephone__wrapper {
     margin-left: 165px;
     margin-top: 7px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .telephone__input {
     padding-left: 20px;
-    padding-bottom: 11px;
+    padding-bottom: 19px;
     font-size: 19px;
     line-height: 18px;
     font-weight: 400;

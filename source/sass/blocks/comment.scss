@@ -33,10 +33,10 @@
 .comment__textarea {
   min-height: 108px;
   padding: 15px;
-  margin-left: -2px;
+  margin-left: 0;
   font-size: 17px;
   line-height: 18px;
-  letter-spacing: -1px;
+  letter-spacing: 0;
   font-weight: 400;
   color: lighten($text-color, 30%);
   resize: none;
@@ -78,7 +78,7 @@
   .comment__title {
     position: absolute;
     top: 69px;
-    left: 48px;
+    left: 50px;
 
     &::before {
       width: 0;
@@ -86,7 +86,7 @@
   }
 
   .comment__wrapper {
-    margin-left: 165px;
+    margin-left: 167px;
   }
 
   .comment__textarea {

@@ -41,11 +41,11 @@
 .email__input {
   position: relative;
   padding-bottom: 15px;
-  margin-left: -2px;
+  margin-left: 0;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: -1px;
+  letter-spacing: 0;
   color: $text-color;
   background-color: transparent;
   border: none;
@@ -114,6 +114,7 @@
 
   .email__input {
     padding-left: 20px;
+    margin-top: 9px;
     font-size: 19px;
     line-height: 18px;
     font-weight: 400;

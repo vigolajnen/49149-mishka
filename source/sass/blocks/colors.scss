@@ -1,7 +1,7 @@
 .colors {
   position: relative;
   padding: 0;
-  margin: 0 0 23px;
+  margin: 0 0 24px;
   border: 0;
 }
 
@@ -113,14 +113,6 @@
     width: 50%;
     margin-bottom: 58px;
 
-    &:nth-child(2n+2) .colors__label {
-      padding-left: 92px;
-    }
-
-    &:nth-child(2n+2) .colors__label::before {
-      left: 11px;
-    }
-
     &:nth-child(5) {
       margin-bottom: 0;
     }
@@ -130,6 +122,14 @@
     }
   }
 
+  .colors__item:nth-child(2n+2) .colors__label {
+    padding-left: 98px;
+  }
+
+  .colors__item:nth-child(2n+2) .colors__label::before {
+    left: 11px;
+  }
+
   .colors__input:checked + .colors__label::before {
     left: 11px;
     width: 51px;
@@ -137,7 +137,7 @@
   }
 
   .colors__label {
-    padding-left: 84px;
+    padding-left: 90px;
     font-size: 19px;
     line-height: 18px;
     font-weight: 700;
@@ -193,6 +193,8 @@
   }
 
   .colors__label {
+    padding-left: 82px;
+
     &::before {
       left: 5px;
     }

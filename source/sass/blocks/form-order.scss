@@ -5,7 +5,7 @@
 }
 
 .form-order__caption {
-  max-width: 700px;
+  max-width: 260px;
   margin: 0 auto;
   padding: 23px 0;
   font-size: 13px;
@@ -43,12 +43,13 @@
 @media (min-width: $tablet-width) {
   .form-order {
     padding: 69px 0 0;
-    margin: 0 auto 32px;
+    margin: 0 auto 35px;
     box-sizing: border-box;
     overflow: hidden;
   }
 
   .form-order__caption {
+    max-width: 665px;
     padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
@@ -114,12 +115,13 @@
 @media (min-width: $desktop-width) {
   .form-order {
     padding: 120px 0 0;
-    margin: 0 auto 32px;
+    margin: 0 auto 35px;
   }
 
   .form-order__caption {
-    width: 700px;
-    padding-left: 55px;
+    max-width: 700px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form-order__inner {

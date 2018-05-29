@@ -7,7 +7,7 @@
 .user__title {
   position: relative;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -17,9 +17,9 @@
   &::before {
     content: "";
     position: absolute;
-    left: 70px;
+    left: 65px;
     top: 8px;
-    width: 180px;
+    width: 200px;
     height: 1px;
     background: $type-title-color;
   }
@@ -36,7 +36,7 @@
 .user__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
@@ -50,7 +50,7 @@
 
 .user__label {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -60,11 +60,11 @@
 .user__input {
   width: 100%;
   padding-bottom: 16px;
-  margin-left: -2px;
+  margin-left: 0;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: -1px;
+  letter-spacing: 0;
   color: $text-color;
   border: none;
   border-bottom: 2px solid $title-color;
@@ -97,7 +97,7 @@
 @media (min-width: $tablet-width) {
   .user {
     width: $tablet-width;
-    padding: 66px 50px 50px;
+    padding: 65px 50px 50px;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -118,7 +118,7 @@
   .user__item {
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   .user__label {
@@ -129,13 +129,13 @@
 
   .user__border {
     margin-left: 27px;
-    margin-top: -6px;
+    margin-top: 0;
   }
 
   .user__input {
     width: 96%;
     margin-left: 1px;
-    padding-bottom: 13px;
+    padding-bottom: 15px;
     padding-left: 14px;
     font-size: 19px;
     line-height: 18px;
