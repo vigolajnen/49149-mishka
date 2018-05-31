@@ -66,8 +66,7 @@
 .video__text {
   order: 3;
   padding: 0 33px;
-  margin: -5px 0;
-  margin-bottom: 26px;
+  margin: -5px 0 24px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -79,6 +78,7 @@
   padding: 14px 25px;
   margin: 0 33px 33px;
   font-size: 17px;
+  letter-spacing: 0;
 
   &:hover {
     color: #ffffff;
@@ -170,7 +170,8 @@
   .video__title {
     padding: 50px 50px 0 0;
     margin-left: 80px;
-    margin-top: 46px;
+    margin-top: 44px;
+    margin-bottom: 37px;
   }
 
   .video__icon {

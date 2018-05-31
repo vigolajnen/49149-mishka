@@ -118,7 +118,7 @@
   .user__item {
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 39px;
+    margin-bottom: 37px;
   }
 
   .user__label {
@@ -135,7 +135,7 @@
   .user__input {
     width: 96%;
     margin-left: 1px;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
     padding-left: 14px;
     font-size: 19px;
     line-height: 18px;
@@ -163,6 +163,10 @@
     padding-left: 175px;
   }
 
+  .user__item {
+    margin-bottom: 38px;
+  }
+
   .user__phone-email {
     padding: 0 50px;
   }
@@ -170,5 +174,11 @@
   .user__title {
     position: absolute;
     left: 62px;
+  }
+
+  .user__input {
+    width: 97%;
+    margin-left: 0;
+    padding-bottom: 16px;
   }
 }

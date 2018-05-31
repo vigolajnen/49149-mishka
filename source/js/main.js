@@ -1,13 +1,19 @@
 "use strict";
 
+var navMain = document.querySelector(".navigation");
 var navToggle = document.querySelector(".navigation__toggle");
-var navMainList = document.querySelector(".navigation__list");
 var logo = document.querySelector(".js-logo");
 
+navMain.classList.remove("navigation--nojs");
+
 navToggle.addEventListener("click", function() {
-  navMainList.classList.toggle("navigation__list--closed");
-  navToggle.classList.toggle("navigation__toggle--closed");
-  logo.classList.toggle("navigation__item--visible");
+  if (navMain.classList.contains("navigation--closed")) {
+      navMain.classList.remove("navigation--closed");
+      navMain.classList.add("navigation--opened");
+    } else {
+      navMain.classList.add("navigation--closed");
+      navMain.classList.remove("navigation--opened");
+    }
 });
 
 var orderLinks = document.querySelectorAll(".js-order");

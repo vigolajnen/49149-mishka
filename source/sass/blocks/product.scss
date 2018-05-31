@@ -38,6 +38,7 @@
 
 .product__inner {
   padding: 27px;
+  margin: 0;
 }
 
 .product__title {
@@ -70,7 +71,7 @@
   color: $text-color;
 }
 
-.product__subinner {
+.product__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,6 +186,14 @@
     width: 100%;
     padding: 23px 25px;
     box-sizing: border-box;
+  }
+
+  .product__text {
+    min-height: 100px;
+  }
+
+  .product__footer {
+    margin: auto 0 0 0;
   }
 
   .product__info {

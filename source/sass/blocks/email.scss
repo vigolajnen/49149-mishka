@@ -134,11 +134,17 @@
 
   .email__title {
     position: absolute;
-    top: 9px;
+    top: 12px;
     left: -115px;
   }
 
   .email__icon {
     right: 7px;
+  }
+
+  .email__input {
+    padding-left: 17px;
+    padding-bottom: 17px;
+    margin-top: 6px;
   }
 }
