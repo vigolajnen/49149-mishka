@@ -94,12 +94,12 @@
   .email__icon {
     position: absolute;
     right: 24px;
-    top: 4px;
+    top: 7px;
   }
 
   .email__title {
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: -164px;
 
     &::before {
@@ -116,7 +116,6 @@
     padding-left: 20px;
     margin-top: 9px;
     font-size: 19px;
-    line-height: 18px;
     font-weight: 400;
     letter-spacing: 0;
   }
@@ -134,17 +133,18 @@
 
   .email__title {
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: -115px;
   }
 
   .email__icon {
     right: 7px;
+    top: 8px;
   }
 
   .email__input {
     padding-left: 17px;
-    padding-bottom: 17px;
+    padding-bottom: 14px;
     margin-top: 6px;
   }
 }

@@ -111,14 +111,13 @@
   .telephone__wrapper {
     margin-left: 165px;
     margin-top: 7px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   .telephone__input {
     padding-left: 20px;
-    padding-bottom: 19px;
+    padding-bottom: 10px;
     font-size: 19px;
-    line-height: 18px;
     font-weight: 400;
     letter-spacing: 0;
   }
@@ -128,15 +127,22 @@
   .telephone__wrapper {
     width: 700px;
     margin-left: 175px;
+    margin-top: 4px;
+    margin-bottom: 26px;
   }
 
   .telephone__title {
     position: absolute;
-    top: 6px;
+    top: 9px;
     left: -114px;
   }
 
   .telephone__icon {
     right: 10px;
+    top: 4px;
+  }
+
+  .telephone__input {
+    padding-bottom: 14px;
   }
 }

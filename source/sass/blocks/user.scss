@@ -104,7 +104,7 @@
 
   .user__title {
     position: absolute;
-    margin-top: 2px;
+    margin-top: 4px;
 
     &::before {
       width: 0;
@@ -113,17 +113,22 @@
 
   .user__list {
     padding-left: 167px;
+    height: 192px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .user__item {
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 37px;
+    margin-bottom: 33px;
   }
 
   .user__label {
+    margin-top: 2px;
     font-size: 19px;
-    line-height: 18px;
     font-weight: 700;
   }
 
@@ -135,10 +140,9 @@
   .user__input {
     width: 96%;
     margin-left: 1px;
-    padding-bottom: 17px;
+    padding-bottom: 13px;
     padding-left: 14px;
     font-size: 19px;
-    line-height: 18px;
     font-weight: 400;
     letter-spacing: 0;
     color: #444444;
@@ -164,7 +168,7 @@
   }
 
   .user__item {
-    margin-bottom: 38px;
+    margin-bottom: 39px;
   }
 
   .user__phone-email {
@@ -176,9 +180,14 @@
     left: 62px;
   }
 
+  .user__label {
+    margin-top: 0;
+  }
+
   .user__input {
     width: 97%;
     margin-left: 0;
-    padding-bottom: 16px;
+    margin-top: -4px;
+    padding-bottom: 11px;
   }
 }
