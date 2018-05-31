@@ -9,19 +9,6 @@
   flex-direction: column;
 }
 
-.navigation__toggle {
-  position: absolute;
-  top: 24px;
-  right: 26px;
-  z-index: 2;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-}
-
 .navigation--closed .navigation__toggle {
   position: absolute;
   top: 24px;
